@@ -1,5 +1,5 @@
 # Pi-ve
-Raspberry Pi Zero W controls a Hive SLR/SLT - A Standalone Heating/Hot water control solution without the Britisg Gas Cloud.
+Raspberry Pi Zero W controls a Hive SLR/SLT - A Standalone Heating/Hot water control solution without the British Gas 'Cloud'.
 
 Control your Central Heating/Hot Water boiler on your local network using:-
 
@@ -13,10 +13,21 @@ Control your Central Heating/Hot Water boiler on your local network using:-
 
 ## What is Pi-ve?
 
-Pi-ve = 
-* 1 off Raspberry Pi Zero W + 
+Pi-ve =
+
+Hardware: 
+* 1 off Raspberry Pi Zero W + PSU +
 * 1 off Zigbee USB Controller (eg. CC2531) + 
 * British Gas Hive Active Heating Thermostat/Boiler Controller (SLR/SLT)  
+
+Software:
+* Raspberry Pi OS (Buster Lite)
+* MQTT Broker - Mosquitto
+* Node-RED
+* Zigbee2MQTT from koenkk
+
+
+
 
 
 
