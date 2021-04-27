@@ -37,7 +37,7 @@ a Hive App, but from a device on our own network.
 
 My Pi Zero W was a freeby when subscribing to the excellent Magpie magazine. https://raspberrypipress.imbmsubscriptions.com/the-magpi/
 
-A Zigbee USB dongle. I used the ubiquitous CC2531 board and programmed it with koenkk firmware. The picture above shows on of these modules with an antenna enclosed in a USB shell that I had 
+A Zigbee USB dongle. I used the ubiquitous CC2531 board and programmed it with koenkk firmware. The picture above shows one of these modules with an antenna enclosed in a USB shell that I had 
 in my parts bin.
 
 
