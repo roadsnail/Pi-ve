@@ -16,9 +16,9 @@ Control your Central Heating/Hot Water boiler on your local network using Pi-ve 
 ### Pi-ve =
 
 Hardware: 
-* 1 off Raspberry Pi Zero W + PSU +
-* 1 off Zigbee USB Controller (eg. CC2531) + 
-* British Gas Hive Active Heating Thermostat/Boiler Controller (SLR/SLT)  (Minus Hive Active Hub)
+* 1 off Raspberry Pi Zero W (kit inc. Case and micro-USB cable) + PSU + micro SD card 
+* 1 off Zigbee USB Controller (eg. CC2531) + USB Housing +
+* British Gas Hive Active Heating Thermostat/Boiler Controller (SLR2/SLT2) or (SLR2/SLT3). The Hive Active Hub is NOT required.
 
 Software:
 * Raspberry Pi OS (Buster Lite)
