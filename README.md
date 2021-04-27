@@ -1,5 +1,11 @@
 # Pi-ve
-Raspberry Pi Zero W Controls Hive SLR/SLT - Standalone Heating/Hot water control  without the Cloud controllable on your local network from a Web page or using messages published to its own MQTT message broker
+Raspberry Pi Zero W Controls Hive SLR/SLT - A Standalone Heating/Hot water control solution without the Britisg Gas Cloud.
+
+Control your Central Heating/Hot Water boiler on your local network using:-
+
+*Node-RED Dashboard (in a Web browser)
+*HTTP Requests
+*Messages published to an onboard MQTT message broker
 
 ![Pi-ve_1](https://user-images.githubusercontent.com/24318993/116269807-6c4e9180-a776-11eb-95e4-f6336ae7906d.png)
 
