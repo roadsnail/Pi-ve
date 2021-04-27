@@ -39,7 +39,7 @@ See Hardware ingredients above.
 * The Hive Active components, the SLT (Thermostat) and SLR2 (Boiler Controller), were obtained from an Internet auction site. A Hive Active hub is not required as we will not be controlling this from
 a Hive App, but from a device on our own network. Although the above picture shows the Hive Active Boiler Controller SLR2 (Dual Central Heating/Hot Water) and the older thermostat (SLT2). A newer SLT3 may be used.
  
-* A Pi Zero W was a freeby when subscribing to the excellent Magpie magazine. See https://raspberrypipress.imbmsubscriptions.com/the-magpi/. Alternatively these are readily available as a kit including case and micro-USB to USB cable
+* A Pi Zero W was a freeby when subscribing to the excellent MagPi magazine. See https://magpi.raspberrypi.org/. Alternatively these are readily available as a kit including case and micro-USB to USB cable
 
 * A Zigbee USB dongle - I used the ubiquitous CC2531 Zigbee board and programmed it with Koenkk firmware. The picture above shows one of these modules with an antenna enclosed in a USB shell (red) that I had 
 in my parts bin.
