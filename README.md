@@ -30,9 +30,7 @@ Software:
 
 ## Where can I get my very own Pi-ve?
 
-<span style="color:red">some *blue* text Firstly - WARNING - If you intend to play along with this project, be very aware that the Hive SLR Boiler Controller will require connecting to a mains electricity supply
-and that the connections to the controller's Central Heating and Hot Water terminals will be switching at mains voltage! Get it wrong, or touch the wrong parts and serious injury or death will 
-result! You have been warned. If uncertain how to connect the Boiler Controller, then get advice from a qualified person. </span>
+#### Firstly - WARNING - If you intend to play along with this project, be very aware that the Hive SLR Boiler Controller will require connecting to a mains electricity supply and that the connections to the controller's Central Heating and Hot Water terminals will be switching at mains voltage! Get it wrong, or touch the wrong parts and serious injury or death will  result! You have been warned. If uncertain how to connect the Boiler Controller, then get advice from a qualified person.
 
 So, moving on...
 
