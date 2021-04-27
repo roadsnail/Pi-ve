@@ -18,7 +18,7 @@ Pi-ve =
 Hardware: 
 * 1 off Raspberry Pi Zero W + PSU +
 * 1 off Zigbee USB Controller (eg. CC2531) + 
-* British Gas Hive Active Heating Thermostat/Boiler Controller (SLR/SLT)  
+* British Gas Hive Active Heating Thermostat/Boiler Controller (SLR/SLT)  (Minus Hive Active Hub)
 
 Software:
 * Raspberry Pi OS (Buster Lite)
