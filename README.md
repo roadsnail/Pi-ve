@@ -26,6 +26,27 @@ Software:
 * Node-RED
 * Zigbee2MQTT from koenkk
 
+---
+
+## Where can I get my very own Pi-ve?
+
+See ingredients above. 
+
+My Hive Active parts, the SLT (Thermostat) and SLR2 (Boiler Controller) was obtained from an Internet auction site. The Hive Active hub is not required  as we will not be controlling this from
+a Hive App, but from a device on our own network.
+
+My Pi Zero W was a freeby when subscribing to the excellent Magpie magazine. https://raspberrypipress.imbmsubscriptions.com/the-magpi/
+
+A Zigbee USB dongle. I used the ubiquitous CC2531 board and programmed it with koenkk firmware. The picture above shows on of these modules with an antenna enclosed in a USB shell that I had 
+in my parts bin.
+
+
+Next - Add about 1 day to download and configure the software
+
+Result - A standalone Heating/Hot Water Controller, lots of fun, and a chance to learn how to configure a Pi, MQTT broker, Node-RED and koenkk's Zigbee2MQTT software/firmware
+
+Alternative buy a Hive Active system and install, but where's the fun and education in that?
+
 
 
 
