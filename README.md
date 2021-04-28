@@ -98,8 +98,18 @@ This allows basic control of the Pi-ve without the 'Time Slot' editing functions
 
 ---
 
+## Control Pi-ve with HTTP request method POST
 
+Pi-ve may be controlled using HTTP JSON formatted requests:-
 
+POST HTTP://ip-address:1880/cmd with Content-Type: application/json
+
+* {"SP":"22.5"}	Set Thermostat setpoint to 22.5 degrees C. (Range 1-30, Increments 0.5)
+* {"CH":"Off"}	Set CH Switch to Off
+* {"CH":"On"}	Set CH Switch to On
+* {"HW":"Off"}	Set HW Switch to Off
+* {"HW":"On"}	Set HW Switch to On
+ 
 
 
 
