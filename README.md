@@ -7,7 +7,7 @@ Control your Central Heating/Hot Water boiler on your local network using Pi-ve 
 * HTTP Requests
 * Messages published to an onboard MQTT message broker
 
-The Node-RED dashboard Web page offers full control of CH and HW with up to 8 programmable 'On' periods a day plus Override/Boost functions.
+The Node-RED dashboard Web page offers full control of CH and HW with up to 8 programmable 'On' periods per day plus Override/Boost functions.
 
 In addition, the Pi-ve may be controlled using MQTT commands OR HTTP Requests from an external system (eg. A Home Automation platform).
 
@@ -32,6 +32,9 @@ Software:
 * Node-RED
 * Zigbee2MQTT from Koenkk - see https://github.com/Koenkk/zigbee2mqtt
 
+Firmware:
+* Koenkk firmware for the CC2531 - see https://www.zigbee2mqtt.io/information/flashing_the_cc2531.html
+
 ---
 
 ## Where can I get my very own Pi-ve?
@@ -43,7 +46,7 @@ If you are confident and happy with the warning above and want to make your own 
 
 * The Hive Active components, the SLT (Thermostat) and SLR2 (Boiler Controller), were obtained from an Internet auction site. A Hive Active hub is not required as we will not be controlling this from
 a Hive App, but from a device on our own network. The Raspberry Pi Zero W. 
-*Although the above picture shows the Hive Active Boiler Controller SLR2 (Dual Central Heating/Hot Water) and the older thermostat (SLT2). A newer SLT3 may be used.*
+*Although the above picture shows the older thermostat (SLT2). A newer SLT3 may be used.*
  
 * A Pi Zero W was a freebie when I subscribed to the excellent MagPi magazine. See https://magpi.raspberrypi.org/. Alternatively these are readily available as a kit including case and micro-USB to USB cable
 
@@ -53,7 +56,7 @@ in my parts bin.
 
 Next - Add about 1 day to download and configure the software
 
-Result - A standalone Heating/Hot Water Controller, lots of fun, and a chance to learn how to configure a Pi, MQTT broker, Node-RED and koenkk's Zigbee2MQTT software/firmware
+Result - A standalone Heating/Hot Water Controller, lots of fun, and a chance to learn how to configure a Pi, MQTT broker, Node-RED and Koenkk's Zigbee2MQTT software/firmware
 
 Alternatively buy a Hive Active system and install, but where's the fun and education in that?
 
