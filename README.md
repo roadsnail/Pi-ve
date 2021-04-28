@@ -66,16 +66,22 @@ Alternatively buy a Hive Active system and install, but where's the fun and educ
 
 The below screenshot shows the Pi-ve status/control web page created in node-RED.
 
-It shows the current status of the Pi-ve, online, current time, plus the current temperature/thermostat setting.
+It shows the current status of the Pi-ve, online, current time, plus the current temperature/thermostat setting and CH/HW states.
 
 
 ![Pi-ve V1 30 Node-RED Dashboard](https://user-images.githubusercontent.com/24318993/116281895-1253c900-a782-11eb-9ccd-9a1f381c17d9.png)
 
+* Manual or Timer Setting modes for heating and water.
+
+* Heating and water Off/On switching.
+
 * Timed On/Off periods for 7 days and up to 8 programmable periods per day (Time Slots) are available for boiler control of heating and hot water.
 
-* An override function is available allowing the current state of CH or HW to be changed for a time slot.
+* An 'Override Timer' function is available allowing the current state of CH or HW to be changed for the duration of a time slot (either off or on).
 
-* Boost functions allow for a 30 minute, 60 minute or 90 minute heat on function for heating or water.
+* Boost functions allow for a 30 minute, 60 minute or 90 minute 'heat on' function for heating and/or water.
+
+
 
 
 
