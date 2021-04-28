@@ -66,7 +66,7 @@ Alternatively buy a Hive Active system and install, but where's the fun and educ
 
 The below screenshot shows the Pi-ve status/control web page created in node-RED.
 
-It shows the current status of the Pi-ve, online, current time, plus the current temperature/thermostat setting and CH/HW states.
+It shows the current status of the Pi-ve, online, current time, plus the current temperature/thermostat setting and CH/HW Off/On and 'Demand' states.
 
 
 ![Pi-ve V1 30 Node-RED Dashboard](https://user-images.githubusercontent.com/24318993/116281895-1253c900-a782-11eb-9ccd-9a1f381c17d9.png)
@@ -79,7 +79,9 @@ It shows the current status of the Pi-ve, online, current time, plus the current
 
 * An 'Override Timer' function is available allowing the current state of CH or HW to be changed for the duration of a time slot (either off or on).
 
-* Boost functions allow for a 30 minute, 60 minute or 90 minute 'heat on' function for heating and/or water.
+* Boost functions allow for a 30 minute, 60 minute or 90 minute 'heat on' function for heating and/or water. 
+  * Hot water boost will switch on the HW relay for the selected period. 
+  * Heating boost will set the thermostat setting to current temperature plus 1 deg C for the selected period.
 
 
 
