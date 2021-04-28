@@ -106,10 +106,10 @@ POST HTTP://ip-address:1880/cmd with Content-Type: application/json
 
 List of valid payloads below. eg. To switch the HW output to off, POST json **{"HW":"Off"}**
 
-Thermostat setpoint
+###Thermostat setpoint
 * {"SP":"22.5"}		*Set Thermostat setpoint to 22.5 degrees C. (Range 1-30, Increments 0.5)*
 
-Central Heating
+###Central Heating
 * {"CH":"Off"}		*Set CH Switch to Off*
 * {"CH":"On"}		*Set CH Switch to On*
 * {"CHBoost":"30"}	*Set CH Boost for 30 mins*
@@ -119,7 +119,7 @@ Central Heating
 * {"tmrActive":"CH"} *Set CH Mode to Timer*
 * {"manActive":"CH"} *Set CH Mode to Timer*
 
-Hot Water
+###Hot Water
 * {"HW":"Off"}		*Set HW Switch to Off*
 * {"HW":"On"}		*Set HW Switch to On*
 * {"HWBoost":"30"}	*Set HW Boost for 30 mins*
