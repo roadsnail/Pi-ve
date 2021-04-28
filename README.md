@@ -105,14 +105,16 @@ Pi-ve may be controlled using HTTP JSON formatted requests:-
 POST HTTP://ip-address:1880/cmd with Content-Type: application/json
 
 * {"SP":"22.5"}		Set Thermostat setpoint to 22.5 degrees C. (Range 1-30, Increments 0.5)
+
 * {"CH":"Off"}		Set CH Switch to Off
 * {"CH":"On"}		Set CH Switch to On
-* {"HW":"Off"}		Set HW Switch to Off
-* {"HW":"On"}		Set HW Switch to On
 * {"CHBoost":"30"}	Set CH Boost for 30 mins
 * {"CHBoost":"60"}	Set CH Boost for 60 mins
 * {"CHBoost":"90"}	Set CH Boost for 90 mins
 * {"CHBoost":"Off"}	Set CH Boost off
+
+* {"HW":"Off"}		Set HW Switch to Off
+* {"HW":"On"}		Set HW Switch to On
 * {"HWBoost":"30"}	Set HW Boost for 30 mins
 * {"HWBoost":"60"}	Set HW Boost for 60 mins
 * {"HWBoost":"90"}	Set HW Boost for 90 mins
