@@ -92,6 +92,11 @@ A screenshot showing Off/On, Manual/Timer Mode and Boost buttons on a simple bro
 
 ![Pi-ve-HTTP](https://user-images.githubusercontent.com/24318993/116423280-73d66f00-a838-11eb-9f00-05cb91d734ff.png)
 
+This allows basic control of the Pi-ve without the 'Time Slot' editing functions provided by the Dashboard screen. It is better optimised for small screen devices.
+
+---
+
+
 
 
 
