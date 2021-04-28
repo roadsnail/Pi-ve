@@ -90,7 +90,7 @@ It shows the current status of the Pi-ve, online, current time, plus the current
 
 A screenshot showing Off/On, Manual/Timer Mode and Boost buttons on a simple browser screen that allows for easy control from a smartphone using something like the Android HTTP Request Shortcuts app from Waboodoo - see https://play.google.com/store/apps/details?id=ch.rmy.android.http_shortcuts&hl=en_GB&gl=US 
 
-![Pi-ve-HTTP](https://user-images.githubusercontent.com/24318993/116423280-73d66f00-a838-11eb-9f00-05cb91d734ff.png)
+![Pi-ve-HTTP](https://user-images.githubusercontent.com/24318993/116427789-3ecc1b80-a83c-11eb-9ee8-3b2a4c5422e0.png)
 
 *Example of /ctrl/page showing Pi-ve room temperature 18.94 deg C, thermostat setpoint 20 deg C. Both Heating and Water demand is 'On'  and SLR2 outputs set to demand 'heat' from the attached boiler. 'Timer' is active for water, while 'Boost' is active for a further 59:04 minutes for heating.* 
 
