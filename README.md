@@ -114,6 +114,8 @@ Central Heating
 * {"CHBoost":"60"}	Set CH Boost for 60 mins
 * {"CHBoost":"90"}	Set CH Boost for 90 mins
 * {"CHBoost":"Off"}	Set CH Boost off
+* {"tmrActive":"CH"} Set CH Mode to Timer
+* {"manActive":"CH"} Set CH Mode to Timer
 
 Hot Water
 * {"HW":"Off"}		Set HW Switch to Off
@@ -122,6 +124,8 @@ Hot Water
 * {"HWBoost":"60"}	Set HW Boost for 60 mins
 * {"HWBoost":"90"}	Set HW Boost for 90 mins
 * {"HWBoost":"Off"}	Set HW Boost off
+* {"tmrActive":"HW"} Set HW Mode to Timer
+* {"manActive":"HW"} Set HW Mode to Timer
 
  
 
