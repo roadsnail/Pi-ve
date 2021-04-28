@@ -80,8 +80,8 @@ It shows the current status of the Pi-ve, online, current time, plus the current
 * An 'Override Timer' function is available allowing the current state of CH or HW to be changed for the duration of a time slot (either off or on).
 
 * Boost functions allow for a 30 minute, 60 minute or 90 minute 'heat on' function for heating and/or water. 
-  * Hot water boost will switch on the HW relay for the selected period. 
-  * Heating boost will set the thermostat setting to current temperature plus 1 deg C for the selected period.
+  * Hot water boost will switch on the HW relay for the selected period. 30/60/90 minutes. 'Cancel' will cancel the boost last boost period.
+  * Similarly, Heating boost will set the thermostat setting to the current temperature plus 1 deg C for the selected period and 'Cancel will cancel the last boost period.
 
 
 
