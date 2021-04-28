@@ -70,6 +70,7 @@ It shows the current status of the Pi-ve, online, current time, plus the current
 
 
 ![Pi-ve V1 30 Node-RED Dashboard](https://user-images.githubusercontent.com/24318993/116281895-1253c900-a782-11eb-9ccd-9a1f381c17d9.png)
+*Pi-ve Dashboard showing Pi-ve 'online', room temperature 19.93 deg C, thermostat setting 21 deg. Heating has been boosted with 29:33 minutes remaining. Looking at the HW Time Slots for the current time (17:41) HW is programmed to 'Off', however 'Override' is active forcing HW On.*
 
 * 'Manual' or 'Timer' Setting modes for heating and water.
 
