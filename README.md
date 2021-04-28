@@ -39,7 +39,7 @@ Firmware:
 
 ## Where can I get my very own Pi-ve?
 
-#### Firstly - Disclaimer - WARNING - If you intend to play along with this project, be very aware that the Hive SLR Boiler Controller will require connecting to a mains electricity supply and that the connections to the controller's Central Heating and Hot Water terminals will be switching at mains voltage! Get it wrong, or touch the wrong parts and serious injury or death may result! You have been warned. If uncertain how to connect the Boiler Controller (SLR2), then obtain advice/assistance from a qualified person.
+#### Disclaimer - WARNING - If you intend to play along with this project, be very aware that the Hive SLR Boiler Controller will require connecting to a mains electricity supply and that the connections to the controller's Central Heating and Hot Water terminals will be switching at mains voltage! Get it wrong, or touch the wrong parts and serious injury or death may result! You have been warned. If uncertain how to connect the Boiler Controller (SLR2), then obtain advice/assistance from a qualified person.
 
 If you are confident and happy with the warning above and want to make your own Pi-ve, then here is a list of parts:-
 
@@ -103,6 +103,8 @@ This allows basic control of the Pi-ve without the 'Time Slot' editing functions
 Pi-ve may be controlled using HTTP JSON formatted requests:-
 
 POST HTTP://ip-address:1880/cmd with Content-Type: application/json
+
+List of valid payloads below. eg. To switch the HW output to off, POST json **{"HW":"Off"}**
 
 Thermostat setpoint
 * {"SP":"22.5"}		*Set Thermostat setpoint to 22.5 degrees C. (Range 1-30, Increments 0.5)*
