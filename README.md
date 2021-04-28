@@ -131,7 +131,18 @@ List of valid payloads below. eg. To switch the HW output to off, POST json **{"
 
  
 
+---
 
+## Control Pi-ve by Publishing to Topics on Pi-ve Mosquitto Message Broker
+
+In addition to the above control methods, Pi-ve may be controlled by publishing control payloads to Topics on Pi-ve's Mosquitto Message Broker:-
+
+List of valid payloads below. eg. To set the Thermostat setpoint to **22.5 deg C**, publish to the MQTT message broker at host Pi-ve, topic **pive2mqtt/SLRCtrl/savedSP** payload **22.5**
+
+### Thermostat setpoint
+* Topic **pive2mqtt/SLRCtrl/savedSP**	payload **22.5** - *Set Thermostat setpoint to 22.5 degrees C. (Range 1-30, Increments 0.5)*
+
+### Central Heating
 
 
 
