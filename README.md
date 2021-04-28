@@ -36,16 +36,16 @@ Software:
 
 ## Where can I get my very own Pi-ve?
 
-#### Firstly - WARNING - If you intend to play along with this project, be very aware that the Hive SLR Boiler Controller will require connecting to a mains electricity supply and that the connections to the controller's Central Heating and Hot Water terminals will be switching at mains voltage! Get it wrong, or touch the wrong parts and serious injury or death will  result! You have been warned. If uncertain how to connect the Boiler Controller, then get advice from a qualified person.
+#### Firstly - A WARNING - If you intend to play along with this project, be very aware that the Hive SLR Boiler Controller will require connecting to a mains electricity supply and that the connections to the controller's Central Heating and Hot Water terminals will be switching at mains voltage! Get it wrong, or touch the wrong parts and serious injury or death may result! You have been warned. If uncertain how to connect the Boiler Controller (SLR2), then obtain advice/assistance from a qualified person.
 
-So, moving on...
+If you are confident and happy with the warning above and want to make your own Pi-ve, then here is a list of parts:-
 
-See Hardware ingredients above. 
 
 * The Hive Active components, the SLT (Thermostat) and SLR2 (Boiler Controller), were obtained from an Internet auction site. A Hive Active hub is not required as we will not be controlling this from
-a Hive App, but from a device on our own network. Although the above picture shows the Hive Active Boiler Controller SLR2 (Dual Central Heating/Hot Water) and the older thermostat (SLT2). A newer SLT3 may be used.
+a Hive App, but from a device on our own network. The Raspberry Pi Zero W. 
+*Although the above picture shows the Hive Active Boiler Controller SLR2 (Dual Central Heating/Hot Water) and the older thermostat (SLT2). A newer SLT3 may be used.*
  
-* A Pi Zero W was a freebie when subscribing to the excellent MagPi magazine. See https://magpi.raspberrypi.org/. Alternatively these are readily available as a kit including case and micro-USB to USB cable
+* A Pi Zero W was a freebie when I subscribed to the excellent MagPi magazine. See https://magpi.raspberrypi.org/. Alternatively these are readily available as a kit including case and micro-USB to USB cable
 
 * A Zigbee USB dongle - I used the ubiquitous CC2531 Zigbee board and programmed it with Koenkk firmware. The picture above shows one of these modules with an antenna enclosed in a USB shell (red) that I had 
 in my parts bin.
