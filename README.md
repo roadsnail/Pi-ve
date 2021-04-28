@@ -105,27 +105,27 @@ Pi-ve may be controlled using HTTP JSON formatted requests:-
 POST HTTP://ip-address:1880/cmd with Content-Type: application/json
 
 Thermostat setpoint
-* {"SP":"22.5"}		Set Thermostat setpoint to 22.5 degrees C. (Range 1-30, Increments 0.5)
+* {"SP":"22.5"}		*Set Thermostat setpoint to 22.5 degrees C. (Range 1-30, Increments 0.5)*
 
 Central Heating
-* {"CH":"Off"}		Set CH Switch to Off
-* {"CH":"On"}		Set CH Switch to On
-* {"CHBoost":"30"}	Set CH Boost for 30 mins
-* {"CHBoost":"60"}	Set CH Boost for 60 mins
-* {"CHBoost":"90"}	Set CH Boost for 90 mins
-* {"CHBoost":"Off"}	Set CH Boost off
-* {"tmrActive":"CH"} Set CH Mode to Timer
-* {"manActive":"CH"} Set CH Mode to Timer
+* {"CH":"Off"}		*Set CH Switch to Off*
+* {"CH":"On"}		*Set CH Switch to On*
+* {"CHBoost":"30"}	*Set CH Boost for 30 mins*
+* {"CHBoost":"60"}	*Set CH Boost for 60 mins*
+* {"CHBoost":"90"}	*Set CH Boost for 90 mins*
+* {"CHBoost":"Off"}	*Set CH Boost off*
+* {"tmrActive":"CH"} *Set CH Mode to Timer*
+* {"manActive":"CH"} *Set CH Mode to Timer*
 
 Hot Water
-* {"HW":"Off"}		Set HW Switch to Off
-* {"HW":"On"}		Set HW Switch to On
-* {"HWBoost":"30"}	Set HW Boost for 30 mins
-* {"HWBoost":"60"}	Set HW Boost for 60 mins
-* {"HWBoost":"90"}	Set HW Boost for 90 mins
-* {"HWBoost":"Off"}	Set HW Boost off
-* {"tmrActive":"HW"} Set HW Mode to Timer
-* {"manActive":"HW"} Set HW Mode to Timer
+* {"HW":"Off"}		*Set HW Switch to Off*
+* {"HW":"On"}		*Set HW Switch to On*
+* {"HWBoost":"30"}	*Set HW Boost for 30 mins*
+* {"HWBoost":"60"}	*Set HW Boost for 60 mins*
+* {"HWBoost":"90"}	*Set HW Boost for 90 mins*
+* {"HWBoost":"Off"}	*Set HW Boost off*
+* {"tmrActive":"HW"} *Set HW Mode to Timer*
+* {"manActive":"HW"} *Set HW Mode to Timer*
 
  
 
