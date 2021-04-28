@@ -92,6 +92,8 @@ A screenshot showing Off/On, Manual/Timer Mode and Boost buttons on a simple bro
 
 ![Pi-ve-HTTP](https://user-images.githubusercontent.com/24318993/116423280-73d66f00-a838-11eb-9f00-05cb91d734ff.png)
 
+*Example of /ctrl/page showing Pi-ve room temperature 18.94 deg C, thermostat setpoint 20 deg C. Both Heating and Water demand is 'On'  and SLR2 outputs set to demand 'heat' from the attached boiler. 'Timer' is active for water, while 'Boost' is active for a further 59:04 minutes for heating.* 
+
 This allows basic control of the Pi-ve without the 'Time Slot' editing functions provided by the Dashboard screen. It is better optimised for small screen devices.
 
 ---
