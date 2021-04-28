@@ -88,6 +88,8 @@ It shows the current status of the Pi-ve, online, current time, plus the current
 
 ## The Pi-ve HTTP Screen - Control Pi-ve with HTTP requests
 
+A screenshot showing Off/On, Manual/Timer Mode and Boost buttons on a simple browser screen that allows for easy control from a smartphone using something like the Android HTTP Request Shortcuts app from Waboodoo - see https://play.google.com/store/apps/details?id=ch.rmy.android.http_shortcuts&hl=en_GB&gl=US 
+
 ![Pi-ve-HTTP](https://user-images.githubusercontent.com/24318993/116423280-73d66f00-a838-11eb-9f00-05cb91d734ff.png)
 
 
