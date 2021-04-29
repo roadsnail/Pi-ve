@@ -39,7 +39,7 @@ Firmware:
 
 ## Where can I get my very own Pi-ve?
 
-#### Disclaimer - WARNING - If you intend to play along with this project, be very aware that the Hive SLR Boiler Controller will require connecting to a mains electricity supply and that the connections to the controller's Central Heating and Hot Water terminals will be switching at mains voltage! Get it wrong, or touch the wrong parts and serious injury or death may result! You have been warned. If uncertain how to connect the Boiler Controller (SLR2), then obtain advice/assistance from a qualified person.
+#### Disclaimer - WARNING - If you intend to play along with this project, be very aware that the Hive SLR Boiler Controller will require connecting to a mains electricity supply and that the connections to the controller's Central Heating and Hot Water terminals will be switching at mains voltage! Get it wrong, or touch the wrong parts and serious injury or death may result! Also, keep it well away from children and pets whilst developing and testing this. You have been warned. If uncertain how to connect the Boiler Controller (SLR2), then obtain advice/assistance from a qualified person.
 
 If you are confident and happy with the warning above and want to make your own Pi-ve, then here is a list of parts:-
 
@@ -68,9 +68,9 @@ In addition my Pi-ve also runs an additional task of listening to my Bluetooth L
 
 ---
 
-## The Pi-ve Dashboard - Set up CH/HW On timers and Control your Pi-ve
+## The Pi-ve Dashboard - Set up CH/HW 'On' Timers, 'Boost' and Control your Heating/Hot Water from your Pi-ve
 
-The below screenshot shows the Pi-ve status/control web page created in node-RED.
+The below screenshot shows the Pi-ve status/control web page created in node-RED and running on the Pi Zero. Just connect to the node-RED dashboard from a browser on your network.
 
 It shows the current status of the Pi-ve, online, current time, plus the current temperature/thermostat setting and CH/HW Off/On and 'Demand' states.
 
@@ -100,7 +100,8 @@ A screenshot showing Off/On, Manual/Timer Mode and Boost buttons on a simple bro
 
 *Example of /ctrl/page showing Pi-ve room temperature 18.94 deg C, thermostat setpoint 20 deg C. Both Heating and Water demand is 'On'  and SLR2 outputs set to demand 'heat' from the attached boiler. 'Timer' is active for water, while 'Boost' is active for a further 59:04 minutes for heating.* 
 
-This allows basic control of the Pi-ve without the 'Time Slot' editing functions provided by the Dashboard screen. It is better optimised for small screen devices.
+This allows basic control of the Pi-ve without the 'Time Slot' editing functions provided by the Node-RED Dashboard screen. Although not offering Time Slot editing functions, it is 
+better optimised for small screen devices.
 
 ---
 
