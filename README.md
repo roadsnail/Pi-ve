@@ -292,7 +292,7 @@ in the advanced: options section and named pan_id:
 The webbased Zigbee2MQTT should be enabled to allow easier setup of the Zigbee connection from the CC2531 co-ordinator to the Hive SLR/SLT devices. This can be seen
 in the example configuration.yaml file below under the section frontend:
 
-Documentation for the webbased frontend may be found [here]https://www.zigbee2mqtt.io/information/frontend.html)
+Documentation for the webbased frontend may be found [here](https://www.zigbee2mqtt.io/information/frontend.html)
 
 
 ```
