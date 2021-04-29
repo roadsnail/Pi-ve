@@ -125,7 +125,7 @@ Pi-ve may be controlled using HTTP JSON formatted requests:-
 
 POST HTTP://ip-address:1880/cmd with Content-Type: application/json
 
-List of valid payloads below. eg. To switch the HW output to off, POST json **{"HW":"Off"}**
+List of valid payloads below (in and including the curly brackets). eg. To switch the HW output to off, POST json **{"HW":"Off"}**
 
 ### Thermostat setpoint
 * {"SP":"22.5"}		*Set Thermostat setpoint to 22.5 degrees C. (Range 1-30, Increments 0.5)*
