@@ -163,10 +163,10 @@ List of valid payloads below. eg. To set the Thermostat setpoint to **22.5 deg C
 
 Your Pi-ve will require the following software/firmware. Here is a list of sources and instructions for installing the necessary software.
 
-###Firmware
+### Firmware
 * The CC2531 Zigbee USB Stick - Download and flash it with Koenkk's co-ordinator firmware. I followed the guide at https://www.zigbee2mqtt.io/information/alternative_flashing_methods.html flashing my CC2531 connected to a Raspberry pi.
 
-###Software
+### Software
 * Raspberry Pi OS - https://www.raspberrypi.org/software/operating-systems/ . There are plenty of guides explaining how to install Raspberry Pi OS onto the Pi Zero W so that you may connect in 'headless' mode.
 
 * Mosquitto MQTT Message Broker for Raspberry Pi - Mosquitto and clients can be installed from the repository. In essence, login to your Pi as user Pi, then...
