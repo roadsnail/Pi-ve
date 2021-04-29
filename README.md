@@ -19,7 +19,7 @@ In addition, the Pi-ve may be controlled using MQTT commands OR HTTP Requests fr
 
 ## Contents
 
-1. What is Pi-ve - https://github.com/roadsnail/Pi-ve#what-is-pi-ve
+1. [What is Pi-ve](https://github.com/roadsnail/Pi-ve#what-is-pi-ve)
 2. Where can I get my very own Pi-ve? - https://github.com/roadsnail/Pi-ve#where-can-i-get-my-very-own-pi-ve
 3. Can I use a Raspberry Pi 3 or 4? - https://github.com/roadsnail/Pi-ve#can-i-use-a-raspberry-pi-3-or-4
 4. The Pi-ve Dashboard - Set up CH/HW 'On' Timers, 'Boost' and Control your Heating/Hot Water from your Pi-ve - https://github.com/roadsnail/Pi-ve#the-pi-ve-dashboard---set-up-chhw-on-timers-boost-and-control-your-heatinghot-water-from-your-pi-ve
