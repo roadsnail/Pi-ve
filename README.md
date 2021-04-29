@@ -85,11 +85,11 @@ It shows the current status of the Pi-ve, online, current time, plus the current
 
 * Timed On/Off periods for 7 days and up to 8 programmable periods per day (Time Slots) are available for boiler control of heating and hot water.
 
-* An 'Override Timer' function is available allowing the current state of CH or HW to be changed for the duration of a time slot (either off or on).
+* An 'Override Timer' function is available allowing the current state of CH or HW to be changed for the duration of a time slot (either off to on OR on to off).
 
-* Boost functions allow for a 30 minute, 60 minute or 90 minute 'heat on' function for heating and/or water. 
+* A 'Boost' function allow for a 30 minute, 60 minute or 90 minute 'heat on' function for heating and/or water. 
   * Hot water boost will switch on the HW relay for the selected period. 30/60/90 minutes. 'Cancel' will cancel the last boost period selected.
-  * Similarly, Heating boost will set the thermostat setting to the current temperature plus 1 deg C for the selected period and 'Cancel will cancel the last boost period.
+  * Similarly, Heating boost will set the thermostat setting to the current temperature plus 1 deg C for the selected period and 'Cancel' will cancel the last boost period.
   
 ---
 
@@ -173,15 +173,25 @@ List of valid payloads below. eg. To set the Thermostat setpoint to **22.5 deg C
 Your Pi-ve will require the following software/firmware. Here is a list of software sources and brief instructions for installing the necessary software. I suggest installing and configuring the software in the order
 below, ensuring that things work properly at each stage of your build.
 
+Some guidance on software configuration is included in the next section (below).
+
 ### Firmware
 * The CC2531 Zigbee USB Stick - Download and flash it with Koenkk's co-ordinator firmware. I followed the guide at https://www.zigbee2mqtt.io/information/alternative_flashing_methods.html flashing my CC2531 connected to a Raspberry pi.
 
+Other Zigbee USB solutions may be used for this project. I just happened to have a CC2531 surplus to requirements as I have upgraded my main Zigbee network controller to a TI 
+CC2652R based module. In my experience, the CC2531 is great at controlling just a few Zigbee devices, but struggles with larger Zigbee networks. In this application, the CC2531 copes 
+easily with just two Zigbee connections (the Hive SLR and SLT).
+
 ### Software
 * Raspberry Pi OS - https://www.raspberrypi.org/software/operating-systems/ . There are plenty of guides explaining how to install Raspberry Pi OS onto the Pi Zero W so that you may connect in 'headless' mode.
-Following installation of the OS, run raspi-config
+
+Following installation of the OS, connect to your Pi and run raspi-config to:-
+    * Set a new password for user Pi (mandatory)
+	* Set a Hostname for your Pi. I suggest Pive. 
+	* Expand Filesystem (optional)
 
 
-* Mosquitto MQTT Message Broker for Raspberry Pi - Mosquitto and clients can be installed from the repository. In essence, login to your Pi as user Pi, then...
+* Mosquitto MQTT Message Broker for Raspberry Pi - Mosquitto and clients can be installed from the Pi OS repository. In essence, login to your Pi as user Pi, then...
 ```
 sudo apt update
 sudo apt upgrade
