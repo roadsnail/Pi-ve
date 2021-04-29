@@ -44,9 +44,8 @@ Firmware:
 If you are confident and happy with the warning above and want to make your own Pi-ve, then here is a list of parts:-
 
 
-* The Hive Active components, the SLT (Thermostat) and SLR2 (Boiler Controller), are easily obtained used from the usual places. The Hive Active hub is not required as we will not be controlling this from
-a Hive App, but from a device on our own network, the Raspberry Pi. 
-*Although the above picture shows the older thermostat (SLT2). A newer SLT3 may be used.*
+* The Hive Active components, the SLT (Thermostat) and SLR2 (Boiler Controller), are easily obtained used from the usual places. The Hive Active hub is not required as this will be replaced by the Raspberry Pi. 
+*Although the above picture shows the older thermostat (SLT2). A newer SLT3 may be used instead.*
  
 * A Pi Zero W was a freebie when I subscribed to the excellent MagPi magazine. See https://magpi.raspberrypi.org/. Alternatively these are readily available as a kit including case and a USB OTG Host cable.
 
@@ -155,3 +154,23 @@ List of valid payloads below. eg. To set the Thermostat setpoint to **22.5 deg C
 * Topic **pive2mqtt/SLRCtrl/HWOffOn**  payload **heat** - Switch Hot Water on
 * Topic **pive2mqtt/SLRCtrl/HWManAuto**  payload **tmrActiveHW** - Set Timer Mode
 * Topic **pive2mqtt/SLRCtrl/HWManAuto**  payload **manActiveHW** - Set Manual Mode
+
+
+
+---
+
+## Software/Firmware Sources
+
+Your Pi-ve will require the following software/firmware. Here is a list of sources and instructions for installing the necessary software.
+
+###Firmware
+* The CC2531 Zigbee USB Stick - Download and flash it with Koenkk's co-ordinator firmware. I followed the guide at https://www.zigbee2mqtt.io/information/alternative_flashing_methods.html flashing my CC2531 connected to a Raspberry pi.
+
+###Software
+* Raspberry Pi OS - https://www.raspberrypi.org/software/operating-systems/ . There are plenty of guides explaining how to install Raspberry Pi OS onto the Pi Zero W so that you may connect in 'headless' mode.
+
+* Mosquitto MQTT Message Broker for Raspberry Pi - Mosquitto and clients can be installed from the repository. In essence, login to your Pi as user Pi, then...
+
+	>then sudo apt update
+	>sudo apt upgrade
+	>sudo apt-get install mosquitto mosquitto-clients
