@@ -193,16 +193,19 @@ Following installation of the OS, connect to your Pi and run raspi-config to:-
 3. Expand Filesystem (optional)
 
 
-* Mosquitto MQTT Message Broker for Raspberry Pi - Mosquitto and clients can be installed from the Pi OS repository. In essence, login to your Pi as user Pi, then...
+#### Mosquitto MQTT Message Broker for Raspberry Pi
+Mosquitto and clients can be installed from the Pi OS repository. In essence, login to your Pi as user Pi, then...
 ```
 sudo apt update
 sudo apt upgrade
 sudo apt-get install mosquitto mosquitto-clients
 ```
 
-* Node-RED - See official install guide here https://nodered.org/docs/getting-started/raspberrypi . Login as user Pi and in home directory run the command on the guide page. This will take some time on the Raspberry Pi Zero.
+#### Node-RED
+See official install guide here https://nodered.org/docs/getting-started/raspberrypi . Login as user Pi and in home directory run the command on the guide page. This will take some time on the Raspberry Pi Zero.
 
-* Zigbee2mqtt - Official installation guide at https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html . Note that in Step 2 of the guide - Installing - instructions to install Node.js may be ignored as this will have been installed earlier in the node-RED install.
+####Zigbee2mqtt
+Official installation guide at https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html . Note that in Step 2 of the guide - Installing - instructions to install Node.js may be ignored as this will have been installed earlier in the node-RED install.
 
 Installation of Zigbee2mqtt will take a few minutes, with many warning thrown up. These may be ignored.
 
