@@ -92,11 +92,11 @@ It shows the current status of the Pi-ve, online, current time, plus the current
 ![Pi-ve V1 30 Node-RED Dashboard](https://user-images.githubusercontent.com/24318993/116281895-1253c900-a782-11eb-9ccd-9a1f381c17d9.png)
 *Example Pi-ve Dashboard screenshot showing Pi-ve 'online', room temperature 19.93 deg C, thermostat setting 21 deg. Heating has been boosted with 29:33 minutes remaining. Looking at the HW Time Slots for the current time (17:41) HW is programmed to 'Off', however 'Override' is active forcing HW On (indicated by the green 'State' LED). Both the CH and HW 'Demand' icons are active (not greyed out)*
 
-* 'Manual' or 'Timer' Setting modes for heating and water.
+* 'Manual' or 'Timer' modes for heating and water.
 
 * Heating and Water Off/On switching.
 
-* Timed On/Off periods for 7 days and up to 8 programmable periods per day (Time Slots) are available for boiler control of heating and hot water.
+* Timed On/Off periods for 7 days and up to 8 programmable 'On' periods per day (Time Slots) are available for boiler control of heating and hot water.
 
 * An 'Override Timer' function is available allowing the current state of CH or HW to be changed for the duration of a time slot (either off to on OR on to off).
 
@@ -282,5 +282,36 @@ node-red-contrib-moment
 ```
 
 
+* Zigbee2mqtt
 
+If you already have a Zigbee network setup, then Pi-ve should be configured with a different pan_id.
+
+This should be set in the configuration.yaml file located at /opt/zigbee2mqtt/data/configuration.yaml (see example options below). The option is located
+in the advanced: options section and named pan_id:
+
+The webbased Zigbee2MQTT should be enabled to allow easier setup of the Zigbee connection from the CC2531 co-ordinator to the Hive SLR/SLT devices. This can be seen
+in the example configuration.yaml file below under the section frontend:
+
+Documentation for the webbased frontend may be found [here]https://www.zigbee2mqtt.io/information/frontend.html)
+
+
+```
+homeassistant: false
+permit_join: true
+mqtt:
+  base_topic: pive2mqtt
+  server: 'mqtt://localhost'
+serial:
+  port: /dev/ttyACM0
+frontend:
+  port: 7070
+  host: 0.0.0.0
+advanced:
+  pan_id: 6800
+  log_level: error
+  last_seen: epoch
+passlist:
+  - '0x001e5e09020bfef9'
+  - '0x001e5e0902039d4e'
+  ```
 
