@@ -218,9 +218,13 @@ sudo apt-get install mosquitto mosquitto-clients
 See official install guide here https://nodered.org/docs/getting-started/raspberrypi . Login as user Pi and in home directory run the command on the guide page. This will take some time on the Raspberry Pi Zero.
 
 ####Zigbee2mqtt
-Official installation guide at https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html . Note that in Step 2 of the guide - Installing - instructions to install Node.js may be ignored as this will have been installed earlier in the node-RED install.
+Official installation guide at https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html . Note that in Step 2 of the guide - Installing - instructions to 
+install Node.js may be ignored as this will have been installed earlier in the node-RED install.
 
 Installation of Zigbee2mqtt will take a few minutes, with many warnings thrown up. Don't panic, these may be ignored.
+
+The installation guide should allow the Zigbee2MQTT software to start correctly, however in addition to the configuration settings given in the official guide, please take note 
+of the additional configuration notes below.
 
 ---
 ## Pi-ve software configuration
@@ -284,12 +288,12 @@ node-red-contrib-moment
 
 * Zigbee2mqtt
 
-If you already have a Zigbee network setup, then Pi-ve should be configured with a different pan_id.
+As stated above, the 
 
-This should be set in the configuration.yaml file located at /opt/zigbee2mqtt/data/configuration.yaml (see example options below). The option is located
-in the advanced: options section and named pan_id:
+If you already have a Zigbee network setup, then Pi-ve should be configured with a different unique pan_id. This should be taken care of by the network_key:GENERATE
+line in configuration.yaml under the advanced: section (see below).
 
-The webbased Zigbee2MQTT should be enabled to allow easier setup of the Zigbee connection from the CC2531 co-ordinator to the Hive SLR/SLT devices. This can be seen
+The webbased frontend to Zigbee2MQTT should be enabled to allow easier setup of the Zigbee connection from the CC2531 co-ordinator to the Hive SLR/SLT devices. This can be seen
 in the example configuration.yaml file below under the section frontend:
 
 Documentation for the webbased frontend may be found [here](https://www.zigbee2mqtt.io/information/frontend.html)
@@ -307,7 +311,7 @@ frontend:
   port: 7070
   host: 0.0.0.0
 advanced:
-  pan_id: 6800
+  network_key: GENERATE
   log_level: error
   last_seen: epoch
 passlist:
