@@ -61,6 +61,13 @@ Alternatively buy a Hive Active system and install, but where's the fun and educ
 
 ---
 
+## Can I use a Raspberry Pi 3 or 4?
+
+Yes, of course. The model 3 and 4 have onboard Wifi making it very suitable for this project. The reason I chose a model Zero W was because it has onboard Wifi and I had one surplus to requirements.
+In addition my Pi-ve also runs an additional task of listening to my Bluetooth LE thermometers and relaying temperature data to my Home Automation system. But that's another story...
+
+---
+
 ## The Pi-ve Dashboard - Set up CH/HW On timers and Control your Pi-ve
 
 The below screenshot shows the Pi-ve status/control web page created in node-RED.
@@ -161,13 +168,16 @@ List of valid payloads below. eg. To set the Thermostat setpoint to **22.5 deg C
 
 ## Software/Firmware Sources
 
-Your Pi-ve will require the following software/firmware. Here is a list of sources and instructions for installing the necessary software.
+Your Pi-ve will require the following software/firmware. Here is a list of software sources and brief instructions for installing the necessary software. I suggest installing and configuring the software in the order
+below, ensuring that things work properly at each stage of your build.
 
 ### Firmware
 * The CC2531 Zigbee USB Stick - Download and flash it with Koenkk's co-ordinator firmware. I followed the guide at https://www.zigbee2mqtt.io/information/alternative_flashing_methods.html flashing my CC2531 connected to a Raspberry pi.
 
 ### Software
 * Raspberry Pi OS - https://www.raspberrypi.org/software/operating-systems/ . There are plenty of guides explaining how to install Raspberry Pi OS onto the Pi Zero W so that you may connect in 'headless' mode.
+Following installation of the OS, run raspi-config
+
 
 * Mosquitto MQTT Message Broker for Raspberry Pi - Mosquitto and clients can be installed from the repository. In essence, login to your Pi as user Pi, then...
 ```
@@ -179,4 +189,9 @@ sudo apt-get install mosquitto mosquitto-clients
 * Node-RED - See official install guide here https://nodered.org/docs/getting-started/raspberrypi . Login as user Pi and in home directory run the command on the guide page. This will take some time on the Raspberry Pi Zero.
 
 * Zigbee2mqtt - Official installation guide at https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html . Note that in Step 2 of the guide - Installing - instructions to install Node.js may be ignored as this will have been installed earlier in the node-RED install.
-Installation of this will take a few minutes, with many warning thrown up. These may be ignored.
+
+Installation of Zigbee2mqtt will take a few minutes, with many warning thrown up. These may be ignored.
+
+
+## Pi-ve software configuration
+
