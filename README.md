@@ -144,7 +144,14 @@ List of valid payloads below. eg. To set the Thermostat setpoint to **22.5 deg C
 
 ### Central Heating
 
+Topic **pive2mqtt/SLRCtrl/CHOffOn**  payload **off** - Switch Heating off
+Topic **pive2mqtt/SLRCtrl/CHOffOn**  payload **heat** - Switch Heating on
+Topic **pive2mqtt/SLRCtrl/CHManAuto**  payload **tmrActiveCH** - Set Timer Mode
+Topic **pive2mqtt/SLRCtrl/CHManAuto**  payload **manActiveCH** - Set Manual Mode
 
+### Central Heating
 
-
-
+Topic **pive2mqtt/SLRCtrl/HWOffOn**  payload **off** - Switch Hot Water off
+Topic **pive2mqtt/SLRCtrl/HWOffOn**  payload **heat** - Switch Hot Water on
+Topic **pive2mqtt/SLRCtrl/HWManAuto**  payload **tmrActiveHW** - Set Timer Mode
+Topic **pive2mqtt/SLRCtrl/HWManAuto**  payload **manActiveHW** - Set Manual Mode
