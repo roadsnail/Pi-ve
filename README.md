@@ -207,7 +207,7 @@ See official install guide here https://nodered.org/docs/getting-started/raspber
 ####Zigbee2mqtt
 Official installation guide at https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html . Note that in Step 2 of the guide - Installing - instructions to install Node.js may be ignored as this will have been installed earlier in the node-RED install.
 
-Installation of Zigbee2mqtt will take a few minutes, with many warning thrown up. These may be ignored.
+Installation of Zigbee2mqtt will take a few minutes, with many warnings thrown up. Don't panic, these may be ignored.
 
 
 ## Pi-ve software configuration
