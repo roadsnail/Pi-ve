@@ -172,5 +172,7 @@ Your Pi-ve will require the following software/firmware. Here is a list of sourc
 * Mosquitto MQTT Message Broker for Raspberry Pi - Mosquitto and clients can be installed from the repository. In essence, login to your Pi as user Pi, then...
 
 	>sudo apt update
-	sudo apt upgrade
-	sudo apt-get install mosquitto mosquitto-clients
+	
+	>sudo apt upgrade
+	
+	>sudo apt-get install mosquitto mosquitto-clients
