@@ -70,7 +70,8 @@ In addition my Pi-ve also runs an additional task of listening to my Bluetooth L
 
 ## The Pi-ve Dashboard - Set up CH/HW 'On' Timers, 'Boost' and Control your Heating/Hot Water from your Pi-ve
 
-The below screenshot shows the Pi-ve status/control web page created in node-RED and running on the Pi Zero. Just connect to the node-RED dashboard from a browser on your network.
+The below screenshot shows the Pi-ve status/control web page created in node-RED and running on the Pi Zero. Just connect to the node-RED dashboard from a browser on your 
+network and browse to URL http://your-pive-ip-address:1880 (inserting your Pi-ve actual IP4 address of course).
 
 It shows the current status of the Pi-ve, online, current time, plus the current temperature/thermostat setting and CH/HW Off/On and 'Demand' states.
 
