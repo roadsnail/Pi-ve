@@ -209,6 +209,6 @@ Official installation guide at https://www.zigbee2mqtt.io/getting_started/runnin
 
 Installation of Zigbee2mqtt will take a few minutes, with many warnings thrown up. Don't panic, these may be ignored.
 
-
+---
 ## Pi-ve software configuration
 
