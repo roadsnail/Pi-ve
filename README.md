@@ -170,7 +170,8 @@ Your Pi-ve will require the following software/firmware. Here is a list of sourc
 * Raspberry Pi OS - https://www.raspberrypi.org/software/operating-systems/ . There are plenty of guides explaining how to install Raspberry Pi OS onto the Pi Zero W so that you may connect in 'headless' mode.
 
 * Mosquitto MQTT Message Broker for Raspberry Pi - Mosquitto and clients can be installed from the repository. In essence, login to your Pi as user Pi, then...
-
-> sudo apt update
+```
+sudo apt update
 sudo apt upgrade
 sudo apt-get install mosquitto mosquitto-clients
+```
