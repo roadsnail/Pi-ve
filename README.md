@@ -44,11 +44,11 @@ Firmware:
 If you are confident and happy with the warning above and want to make your own Pi-ve, then here is a list of parts:-
 
 
-* The Hive Active components, the SLT (Thermostat) and SLR2 (Boiler Controller), were obtained from an Internet auction site. A Hive Active hub is not required as we will not be controlling this from
-a Hive App, but from a device on our own network. The Raspberry Pi Zero W. 
+* The Hive Active components, the SLT (Thermostat) and SLR2 (Boiler Controller), are easily obtained used from the usual places. The Hive Active hub is not required as we will not be controlling this from
+a Hive App, but from a device on our own network, the Raspberry Pi. 
 *Although the above picture shows the older thermostat (SLT2). A newer SLT3 may be used.*
  
-* A Pi Zero W was a freebie when I subscribed to the excellent MagPi magazine. See https://magpi.raspberrypi.org/. Alternatively these are readily available as a kit including case and micro-USB to USB cable
+* A Pi Zero W was a freebie when I subscribed to the excellent MagPi magazine. See https://magpi.raspberrypi.org/. Alternatively these are readily available as a kit including case and a USB OTG Host cable.
 
 * A Zigbee USB dongle - I used the ubiquitous CC2531 Zigbee board and programmed it with Koenkk firmware. The picture above shows one of these modules with an antenna enclosed in a USB shell (red) that I had 
 in my parts bin.
