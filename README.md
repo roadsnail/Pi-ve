@@ -178,6 +178,6 @@ Your Pi-ve will require the following software/firmware. Here is a list of sourc
 	>sudo apt-get install mosquitto mosquitto-clients
 	
 	
-`sudo apt update
-sudo apt upgrade
-sudo apt-get install mosquitto mosquitto-clients`
+`sudo apt update`
+`sudo apt upgrade`
+`sudo apt-get install mosquitto mosquitto-clients`
