@@ -229,7 +229,8 @@ Installation of Zigbee2mqtt will take a few minutes, with many warnings thrown u
 Post install configuration discussed above
 
 * Mosquitto MQTT Message Broker for Raspberry Pi
-Configuration file /etc/mosquitto/mosquitto.conf
+
+Create Mosquitto Configuration file located at /etc/mosquitto/mosquitto.conf, suggested contents
 
 ```
 # Place your local configuration in /etc/mosquitto/conf.d/
@@ -250,6 +251,7 @@ include_dir /etc/mosquitto/conf.d
 
 
 * node-RED
+
 Following installation, set the SYSTEMD to start node-RED at startup thus:
 ```
 pi@pive:~ $ sudo systemctl enable nodered
