@@ -183,7 +183,8 @@ CC2652R based module. In my experience, the CC2531 is great at controlling just 
 easily with just two Zigbee connections (the Hive SLR and SLT).
 
 ### Software
-* Raspberry Pi OS - https://www.raspberrypi.org/software/operating-systems/ . There are plenty of guides explaining how to install Raspberry Pi OS onto the Pi Zero W so that you may connect in 'headless' mode.
+#### Raspberry Pi OS 
+https://www.raspberrypi.org/software/operating-systems/ . There are plenty of guides explaining how to install Raspberry Pi OS onto the Pi Zero W so that you may connect in 'headless' mode.
 
 Following installation of the OS, connect to your Pi and run raspi-config to:-
 
