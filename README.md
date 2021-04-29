@@ -225,3 +225,42 @@ Installation of Zigbee2mqtt will take a few minutes, with many warnings thrown u
 ---
 ## Pi-ve software configuration
 
+* Raspberry Pi OS
+Post install configuration discussed above
+
+* Mosquitto MQTT Message Broker for Raspberry Pi
+Configuration file /etc/mosquitto/mosquitto.conf
+
+```
+# Place your local configuration in /etc/mosquitto/conf.d/
+#
+# A full description of the configuration file is at
+# /usr/share/doc/mosquitto/examples/mosquitto.conf.example
+
+pid_file /var/run/mosquitto.pid
+
+persistence true
+persistence_location /var/lib/mosquitto/
+
+log_dest file /var/log/mosquitto/mosquitto.log
+
+include_dir /etc/mosquitto/conf.d
+```
+
+
+
+* node-RED
+Following installation, set the SYSTEMD to start node-RED at startup thus:
+```
+pi@pive:~ $ sudo systemctl enable nodered
+Created symlink /etc/systemd/system/multi-user.target.wants/nodered.service → /lib/systemd/system/nodered.service.
+pi@pive:~ $
+pi@pive:~ $ sudo systemctl start nodered
+```
+
+Reboot your Pi-ve and ensure node-RED is started and running by connecting to node-RED running on Port 1880 by going to
+http://pive-ip-address:1880
+
+
+
+
