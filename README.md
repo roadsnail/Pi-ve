@@ -187,9 +187,9 @@ easily with just two Zigbee connections (the Hive SLR and SLT).
 
 Following installation of the OS, connect to your Pi and run raspi-config to:-
 
-* Set a new password for user Pi (mandatory)
-* Set a Hostname for your Pi. I suggest Pive. 
-* Expand Filesystem (optional)
+1. Set a new password for user Pi (mandatory)
+2. Set a Hostname for your Pi. I suggest Pive. 
+3. Expand Filesystem (optional)
 
 
 * Mosquitto MQTT Message Broker for Raspberry Pi - Mosquitto and clients can be installed from the Pi OS repository. In essence, login to your Pi as user Pi, then...
