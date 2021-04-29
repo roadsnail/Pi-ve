@@ -260,8 +260,25 @@ pi@pive:~ $
 pi@pive:~ $ sudo systemctl start nodered
 ```
 
-Reboot your Pi-ve and ensure node-RED is started and running by connecting to node-RED running on Port 1880 by going to
-http://pive-ip-address:1880
+Reboot your Pi-ve and ensure node-RED is started by pointing a browser at http://pive-ip-address:1880 and ensure node-RED responds
+
+
+Next, install some additional node-RED nodes required by the flow listed below. 
+
+These may be installed at the node-RED flow creation screen by selecting 'MENU' - Manage palette
+Select the 'Install' tab.
+
+For each of the nodes listed below, enter the name into the 'search' field, then when displayed, click 'install'
+
+#### List of additional nodes:-
+```
+node-red-dashboard
+node-red-node-ui-list
+node-red-contrib-ui-led
+node-red-contrib-ui-media
+node-red-contrib-simple-gate
+node-red-contrib-moment
+```
 
 
 
