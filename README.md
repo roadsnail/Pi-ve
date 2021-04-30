@@ -299,7 +299,7 @@ running on the Pi.
 The following additions should be made to the Zigbee2MQTT configuration.yaml file to:-
 
 * Enable webbased frontend - The webbased frontend to Zigbee2MQTT should be enabled to allow easier setup of the Zigbee connection from the CC2531 co-ordinator to the Hive SLR/SLT devices. 
-This can be seen in the example configuration.yaml file below under the section **frontend:** ie set **port:** to **7070** and **host:** to **0.0.0.0**
+This can be seen in the example configuration.yaml file below under the section **frontend:** -  set **port:** to **7070** and **host:** to **0.0.0.0**
 
 Documentation for the webbased frontend may be found [here](https://www.zigbee2mqtt.io/information/frontend.html)
 
