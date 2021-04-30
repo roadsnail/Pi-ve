@@ -15,6 +15,11 @@ In addition, the Pi-ve may be controlled using MQTT commands OR HTTP Requests fr
 
 *Pi-ve System - SLR2, Zigbee USB Stick (attached to Raspberry Pi Zero W), SLT2*
 
+But why go to the trouble of controlling Hive Active from a Pi when it's easy to use the Hive Hub and control heating and hot water from the App?
+
+Well, the main reason I have taken this approach is to remove my dependance on the Hive Cloud and have full control over my boiler even during Hive system outages, (yes they do happen), and 
+ISP  
+
 ---
 
 ## Contents
@@ -28,6 +33,10 @@ In addition, the Pi-ve may be controlled using MQTT commands OR HTTP Requests fr
 7. [Control Pi-ve by Publishing to Topics on Pi-ve Mosquitto Message Broker](https://github.com/roadsnail/Pi-ve#control-pi-ve-by-publishing-to-topics-on-pi-ve-mosquitto-message-broker)
 8. [Software/Firmware Sources](https://github.com/roadsnail/Pi-ve#softwarefirmware-sources)
 9. [Pi-ve software configuration](https://github.com/roadsnail/Pi-ve#pi-ve-software-configuration)
+10. [Review Progress and Check Software Components](https://github.com/roadsnail/Pi-ve#review-progress-and-check-software-components)
+11. [Configure Hive Active SLR/SLT - Factory Reset and Join Pi-ve Zigbee Network](https://github.com/roadsnail/Pi-ve#configure-hive-active-slrslt---factory-reset-and-join-pi-ve-zigbee-network)
+12. [node-RED - Import flow](https://github.com/roadsnail/Pi-ve#node-red---import-flow)
+
 
 ---
 ## What is Pi-ve?
