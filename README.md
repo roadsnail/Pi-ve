@@ -17,10 +17,10 @@ In addition, the Pi-ve may be controlled using MQTT commands OR HTTP Requests fr
 
 But why go to the trouble of controlling Hive Active from a Pi when it's easy to use the Hive Hub and control heating and hot water from the App?
 
-Well, the main reason I have taken this approach is to remove my dependance on the Hive Cloud and have full **local** control over my boiler even during Hive system outages, (yes they do happen), and 
+Well, the main reason I have taken this approach is to remove my dependence on the Hive Cloud and have full **local** control over my boiler even during Hive system outages, (yes they do happen), and 
 ISP/Internet issues.
 
-The second reason is to remove any dependancy my Home Automation system has on Hive's undocumented APIs which may change without notice. I have been caught out twice in the past when British Gas 
+The second reason is to remove any dependency my Home Automation system has on Hive's undocumented APIs which may change without notice. I have been caught out twice in the past when British Gas 
  made changes.
 
 Lastly, British Gas may decide at some time to stop supporting Hive Active. If or when that happens, my Hive investment will continue working.
@@ -76,7 +76,7 @@ If you are confident and happy with the warning above and want to make your own 
 * The Hive Active components, the SLT (Thermostat) and SLR2 (Boiler Controller), are easily obtained used from the usual places. The Hive Active hub is not required as this will be replaced by the Raspberry Pi. 
 *Although the above picture shows the older thermostat (SLT2). A newer SLT3 may be used instead.*
  
-* A Pi Zero W was a freebie when I subscribed to the excellent MagPi magazine. See https://magpi.raspberrypi.org/. Alternatively these are readily available as a kit including case and a USB OTG Host cable.
+* A Pi Zero W was a freebie when I subscribed to the excellent MagPi magazine. See https://magpi.raspberrypi.org/. Alternatively, these are readily available as a kit including a case and a USB OTG Host cable.
 
 * A Zigbee USB dongle - I used the ubiquitous CC2531 Zigbee board and programmed it with Koenkk firmware. The picture above shows one of these modules with an antenna enclosed in a USB shell (red) that I had 
 in my parts bin.
@@ -86,14 +86,14 @@ Next - Add about 1 day to download and configure the software
 
 Result - A standalone Heating/Hot Water Controller, lots of fun, and a chance to learn how to configure a Pi, MQTT broker, Node-RED and Koenkk's Zigbee2MQTT software/firmware
 
-Alternatively buy a Hive Active system and install, but where's the fun and education in that?
+Alternatively, buy a Hive Active system and install it, but where's the fun and education in that?
 
 ---
 
 ## Can I use a Raspberry Pi 3 or 4?
 
-Yes, of course. The model 3 and 4 have onboard Wifi making it very suitable for this project. The reason I chose a model Zero W was because it has onboard Wifi and I had one surplus to requirements.
-In addition my Pi-ve also runs an additional task of listening to my Bluetooth LE thermometers and relaying temperature data to my Home Automation system. But that's another story...
+Yes, of course. Model 3 and 4 have onboard Wifi making them very suitable for this project. The reason I chose a model Zero W was it has onboard Wifi and I had one surplus to requirements.
+In addition, my Pi-ve also runs an additional task of listening to my Bluetooth LE thermometers and relaying temperature data to my Home Automation system. But that's another story...
 
 ---
 
@@ -106,7 +106,7 @@ It shows the current status of the Pi-ve, online, current time, plus the current
 
 
 ![Pi-ve V1 30 Node-RED Dashboard](https://user-images.githubusercontent.com/24318993/116281895-1253c900-a782-11eb-9ccd-9a1f381c17d9.png)
-*Example Pi-ve Dashboard screenshot showing Pi-ve 'online', room temperature 19.93 deg C, thermostat setting 21 deg. Heating has been boosted with 29:33 minutes remaining. Looking at the HW Time Slots for the current time (17:41) HW is programmed to 'Off', however 'Override' is active forcing HW On (indicated by the green 'State' LED). Both the CH and HW 'Demand' icons are active (not greyed out)*
+*Example Pi-ve Dashboard screenshot showing Pi-ve 'online', room temperature 19.93 deg C, thermostat setting 21 deg. Heating has been boosted with 29:33 minutes remaining. Looking at the HW Time Slots for the current time (17:41) HW is programmed to 'Off', however, 'Override' is active forcing HW On (indicated by the green 'State' LED). Both the CH and HW 'Demand' icons are active (not greyed out)*
 
 * 'Manual' or 'Timer' modes for heating and water.
 
@@ -117,7 +117,7 @@ It shows the current status of the Pi-ve, online, current time, plus the current
 * An 'Override Timer' function is available allowing the current state of CH or HW to be changed for the duration of a time slot (either off to on OR on to off).
 
 * A 'Boost' function allow for a 30 minute, 60 minute or 90 minute 'heat on' function for heating and/or water. 
-  * Hot water boost will switch on the HW relay for the selected period. 30/60/90 minutes. 'Cancel' will cancel the last boost period selected.
+  * Hot water boost will switch on the HW relay for the selected period. 30/60/90-minutes. 'Cancel' will cancel the last boost period selected.
   * Similarly, Heating boost will set the thermostat setting to the current temperature plus 1 deg C for the selected period and 'Cancel' will cancel the last boost period.
   
 ---
@@ -208,14 +208,14 @@ Some guidance on software configuration is included in the [next section (below)
 * The CC2531 Zigbee USB Stick - Download and flash it with Koenkk's co-ordinator firmware. I followed the guide at https://www.zigbee2mqtt.io/information/alternative_flashing_methods.html flashing my CC2531 connected to a Raspberry pi.
 
 Other Zigbee USB solutions may be used for this project. I just happened to have a CC2531 surplus to requirements as I have upgraded my main Zigbee network controller to a TI 
-CC2652R based module. In my experience, the CC2531 is great at controlling just a few Zigbee devices, but struggles with larger Zigbee networks. In this application, the CC2531 copes 
+CC2652R based module. In my experience, the CC2531 is great at controlling just a few Zigbee devices but struggles with larger Zigbee networks. In this application, the CC2531 copes 
 easily with just two Zigbee connections (the Hive SLR and SLT).
 
 ### Software
 #### Raspberry Pi OS 
 https://www.raspberrypi.org/software/operating-systems/ . There are plenty of guides explaining how to install Raspberry Pi OS onto the Pi Zero W so that you may connect in 'headless' mode.
 
-Following installation of the OS, connect to your Pi and run raspi-config to:-
+Following the installation of the OS, connect to your Pi and run raspi-config to:-
 
 1. Set a new password for user Pi (mandatory)
 2. Set a Hostname for your Pi. I suggest Pive. 
@@ -231,7 +231,7 @@ sudo apt-get install mosquitto mosquitto-clients
 ```
 
 #### Node-RED
-See official install guide here https://nodered.org/docs/getting-started/raspberrypi . Login as user Pi and in home directory run the command on the guide page. This will take some time on the Raspberry Pi Zero.
+See the official install guide here https://nodered.org/docs/getting-started/raspberrypi . Login as user Pi and in the home directory run the command on the guide page. This will take some time on the Raspberry Pi Zero.
 
 #### Zigbee2mqtt
 Follow the Official installation guide at https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html AFTER reading the next two tips:-
@@ -239,7 +239,7 @@ Follow the Official installation guide at https://www.zigbee2mqtt.io/getting_sta
 * Step 2 of the guide - Installing - instructions to 
 install Node.js may be omitted as this will have been installed earlier during the node-RED install.
 
-* Also in section 5 of the official guide, the instruction that refers to installation of Zigbee2MQTT on a Pi 1 or Zero and modification of 
+* Also in section 5 of the official guide, the instruction that refers to the installation of Zigbee2MQTT on a Pi 1 or Zero and modification of 
 ExecStart should be ignored 
 
 Installation of Zigbee2mqtt will take a few minutes, with many warnings thrown up. Don't panic, these may be ignored.
@@ -251,7 +251,7 @@ of the additional configuration notes in the Zigbee2MQTT software configuration 
 ## Pi-ve software configuration
 
 * Raspberry Pi OS
-Post install configuration discussed above
+Post-install configuration discussed above
 
 * Mosquitto MQTT Message Broker for Raspberry Pi
 
@@ -314,16 +314,16 @@ running on the Pi.
 
 The following additions should be made to the Zigbee2MQTT configuration.yaml file to:-
 
-* Enable webbased frontend - The webbased frontend to Zigbee2MQTT should be enabled to allow easier setup of the Zigbee connection from the CC2531 co-ordinator to the Hive SLR/SLT devices. 
+* Enable the web-based frontend - The web-based frontend to Zigbee2MQTT should be enabled to allow the easier setup of the Zigbee connection from the CC2531 co-ordinator to the Hive SLR/SLT devices. 
 This can be seen in the example configuration.yaml file below under the section **frontend:** -  set **port:** to **7070** and **host:** to **0.0.0.0**
 
-Documentation for the webbased frontend may be found [here](https://www.zigbee2mqtt.io/information/frontend.html)
+Documentation for the web-based frontend may be found [here](https://www.zigbee2mqtt.io/information/frontend.html)
 
 * In the **mqtt:** section - Modify the **base_topic:** to be **pive2mqtt** (see below)
 
 * In the **advanced:** section - Set **log_level:** to **error** and **last_seen:** to **epoch** (see example configuration.yaml below)
 
-After making any changes, either reboot your Pi, or restart zigbee2mqtt 
+After making any changes, either reboot your Pi or restart zigbee2mqtt 
 ```
 sudo systemctl restart zigbee2mqtt
 ```
@@ -355,7 +355,7 @@ So far, the Pi-ve software has been installed and hopefully configured correctly
 
 If the configuration has got this far, then node-RED must be installed and working, as it is possible to connect to it with a browser connected to the Pi-ve IP address at port 1880
 
-It may be useful at this point to check that the Mosquitto Message Broker is also functioning correctly, and that Zigbee2MQTT is running, can connect to the Message
+It may be useful at this point to check that the Mosquitto Message Broker is also functioning correctly and that Zigbee2MQTT is running, can connect to the Message
 Broker, and it can at least connect to a functioning Zigbee co-ordinator (the CC2531). 
 
 #### Mosquitto Message Broker Status
@@ -412,13 +412,13 @@ pi@pive:~ $
 The command **sudo systemctl status zigbee2mqtt**  should return something similar to the above.
 If not, then check logs (syslog) just after stopping ( $ sudo systemctl stop zigbee2mqtt) then starting ( $ sudo systemctl start zigbee2mqtt)
 
-The logs should give a clue as to what is stopping the service coming up cleanly. 
+The logs should give a clue as to what is stopping the service from coming up cleanly. 
 
 Useful information can be found at the official Zigbee2MQTT documentation site [here](https://www.zigbee2mqtt.io/information/FAQ.html)
 
 The usual suspects are:
 
-* The Zigbee USB device is malfuntioning (try re-programming it) or it is not recognised on the Raspberry Pi USB serial port
+* The Zigbee USB device is malfunctioning (try re-programming it) or it is not recognised on the Raspberry Pi USB serial port
 * A configuration problem with the zigbee2mqtt configuration file at /opt/zigbee2mqtt/data/configuration.yaml. 
 * A problem with zigbee2mqtt not connecting to the Mosquitto Message Broker (see MQTT Explorer comments above).
 
@@ -442,14 +442,14 @@ From a webbrowser, go to http://pi-ve-ip-address:7070 to access the Zigbee2MQTT 
 ![Web-frontend-zigbee2mqtt](https://user-images.githubusercontent.com/24318993/116718597-0a8a6380-a9d2-11eb-91e7-52ebf5ffda10.png)
 *Web frontend Zigbee2MQTT screenshot - showing 'Join' button, the SLR/SLT devices and friendly names*
 
-Click on the 'join' button on the right hand side of the menu bar to display 'Permit join'. This should allow new Zigbee devices to join the network.
+Click on the 'join' button on the right-hand side of the menu bar to display 'Permit join'. This should allow new Zigbee devices to join the network.
 
 Next, the SLR/SLT should both be factory reset and placed into pairing mode (detailed procedure below). Firstly, the SLR will be reset and paired, we should observe log messages 
 appearing on the web frontend
 screen as it goes through its pairing procedure. As soon as pairing has finished, we will observe that the SLR remains in pairing mode waiting for the SLT to pair with it.
 
 We next reset the SLT and place it into pairing mode and observe it pair with the Pi-ve AND the SLR. If this has been successful, then the SLR/SLT will appear in the 
-web frontend Devices list, and the SLR status LED will be a solid green.
+web frontend Devices list and the SLR status LED will be solid green.
  
 
 
@@ -466,16 +466,16 @@ While still in pairing mode:-
 and join the network (check log messages on the web frontend screen).
 * The LED on the Boiler Controller should turn solid green and the SLR/SLT's should be joined to the Zigbee network.
 
-* SLT3 ONLY - After joining the network, the Thermostat goes into a setup mode requesting Hot Water and Central Heating schedules to be setup. Do NOT accept the option to set these up and the
+* SLT3 ONLY - After joining the network, the Thermostat goes into a setup mode requesting Hot Water and Central Heating schedules to be set up. Do NOT accept the option to set these up and the
 thermostat should just display the current temperature and the status of CH and HW will be shown as 'Sch'
 
 * Finally click the web frontend 'Join' button to disable other devices from joining the network.
 
 * The web frontend screen should now show two new devices successfully connected to the Pi-ve Zigbee network.
 
-* The last step is to set 'friendly names' for the SLR/SLT devices as these are used later in the node-RED flows when referring to Mosquitto Message Broker topics - So, in the devices screen on the 
+* The last step is to set 'friendly names' for the SLR/SLT devices as these are used later in the node-RED flows when referring to Mosquitto Message Broker topics - So, in the device's screen on the 
 web frontend, click on the 'unfriendly' hexadecimal name for the SLR device. A description screen is displayed with an edit (pencil icon) option at the bottom left. Click that and enter a friendly
-name **SLR** for the device and 'Save Changes'. Similarly do the same for the SLT device and make its friendly name **SLT** and 'Save Changes'.
+name **SLR** for the device and 'Save Changes'. Similarly, do the same for the SLT device and make its friendly name **SLT** and 'Save Changes'.
 
 
 
@@ -485,7 +485,7 @@ name **SLR** for the device and 'Save Changes'. Similarly do the same for the SL
 #### Check Zigbee Topic SLR
 
 
-At this point the controller may not publish a full list of parameters on the its root topic pive2mqtt/SLR which are required by Pi-ve's node-RED flow 
+At this point, the controller may not publish a full list of parameters on its root topic pive2mqtt/SLR which are required by Pi-ve's node-RED flow 
 for control. To check these, go to the web frontend screen, select the SLR device and the 'State' tab.
 
 Those required are highlighted. Any additional parameters are unused.
@@ -501,7 +501,7 @@ Similarly (for Hot Water):-
 
 Press MENU button Select 'Hot Water' and set to 'Always On' - Then press confirm button
 
-On the SLT2 model thermostat:- Press top right 'menu' button marked + to enable other switches Press Heat function button (marked right arrow) until the status changes to Manual Press Hot Water funtion button (marked left arrow) until the status changes to Off
+On the SLT2 model thermostat:- Press top right 'menu' button marked + to enable other switches Press Heat function button (marked right arrow) until the status changes to Manual Press Hot Water function button (marked left arrow) until the status changes to Off
 
 
 
