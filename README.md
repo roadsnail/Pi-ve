@@ -415,11 +415,62 @@ The usual suspects are:
 ---
 ## Configure Hive Active SLR/SLT - Factory Reset and Join Pi-ve Zigbee Network
 
-
-
-
-Assuming this is the case, the Hive Active Thermostat (SLT) and Boiler Controller (SLR) can connect to the CC2531 Zigbee co-ordinator to form a 3 node
+The Hive Active Thermostat (SLT) and Boiler Controller (SLR) can now be connected to the CC2531 Zigbee co-ordinator to form a 3 node
 Zigbee network.
+
+To allow the SLR/SLT devices to join the network, 'Join' must be enable on the Pi. 
+
+From a webbrowser, go to http://pi-ve-ip-address:7070 to access the Zigbee2MQTT frontend. If this fails, then review the section configuring Zigbee2MQTT above.
+
+Click on the 'Disable join' button on the menu bar to display 'Permit join'. This should allow new Zigbee devices to join the network.
+
+Next, the SLR/SLT should both be factory reset and placed into pairing mode (detailed procedure below). Firstly, the SLR will be reset and paired, we should observe log messages 
+appearing on the web frontend
+screen as it goes through its pairing procedure. As soon as pairing has finished, we will observe that the SLR remains in pairing mode waiting for the SLT to pair with it.
+
+We next reset the SLT and place it into pairing mode and observe it pair with the Pi-ve AND the SLR. If this has been successful, then the SLR/SLT will appear in the 
+web frontend Devices list, and the SLR status LED will be a solid green.
+ 
+
+
+#### Pairing Instructions:
+
+* Remove a battery from the Hive Active Thermostat (SLT2 or SLT3)
+* Enable Zigbee2MQTT to allow it to accept new devices. (Click the Zigbee2MQTT web frontend 'Pair' button. Logs will show pairing activity as it happens)
+* On the Boiler Controller SLR2, press and hold 'Central Heating' button until it flashes pink. Release then press and hold it again. It will flash amber and the 
+controller should join the network. With Zigbee2MQTT still in pairing mode:-
+* Replace batteries in the thermostat (SLT2 or SLT3) while pressing 'back' and 'menu' buttons on the SLT3 OR the '+' and '-' buttons on the SLT" to perform a reset. It will, reset, reboot 
+and join the network (check logs).
+* Testing (SLR2 and SLT3 combination)
+Following on from testing the older Hive Active SLT2 Thermostat working with the SLR2 Controller. I have done some preliminary testing of the newer Hive Active Thermostat, the SLT3 (shiny 
+with rotary encoder) and SLR2 combination.
+
+Pairing of these is carried out in a similar manner to the SLR2/SLT2 versions.
+
+However, there are some differences in setup between the older SLT2 and newer SLT3 thermostats.
+
+I observed that following a factory reset of the SLT3 - It joined my Zigbee network and then went into setup mode - requesting a HW/CH schedule to be setup.
+
+This may be skipped and the thermostat subsequently displays the current temperature and status of CH/HW to both be 'Sch'
+
+At this point the controller does not publish a full list of MQTT messages on the its root topic zigbee2mqtt/FRIENDLY_NAME
+
+By connecting a 'debug' node to the output of the node-RED MQTT input node you can see that fewer messages are being sent from the Hive test system.
+
+To enable the missing MQTT messages relating to CH and HW relay control -
+
+On the SLT3 thermostat:- Press MENU button Select 'Heat' and set to 'Manual' - Then press confirm button
+
+Similarly (for Hot Water):-
+
+Press MENU button Select 'Hot Water' and set to 'Always On' - Then press confirm button
+
+On the SLT2 thermostat:- Press top right 'menu' button marked + to enable other switches Press Heat function button (marked right arrow) until the status changes to Manual Press Hot Water funtion button (marked left arrow) until the status changes to Off
+
+
+
+
+
 
 
 ---
