@@ -339,7 +339,7 @@ So far, the Pi-ve software has been installed and hopefully configured correctly
 
 If the configuration has got this far, then node-RED must be installed and working, as it is possible to connect to it with a browser connected to the Pi-ve IP address at port 1880
 
-It may be useful at this point to check that Mosquitto Message Broker is also functioning correctly, and that Zigbee2MQTT is running, can connect to the Message
+It may be useful at this point to check that the Mosquitto Message Broker is also functioning correctly, and that Zigbee2MQTT is running, can connect to the Message
 Broker, and it can at least connect to a functioning Zigbee co-ordinator (the CC2531). 
 
 #### Mosquitto Message Broker Status
@@ -364,6 +364,13 @@ pi@pive:~ $
 
 The command **sudo systemctl status mosquitto**  should return something similar to the above.
 If not, then the prime suspect will almost certainly be a problem with options in the Mosquitto configuration file.
+
+An extremely useful and highly recommended tool for checking Mosquitto is MQTT Explorer from Thomas Nordquist and is available for
+all major software platforms - [Link](http://mqtt-explorer.com/)
+
+ 
+
+
 
 
 #### The Zigbee2MQTT Service Status 
@@ -397,7 +404,7 @@ The usual suspects are:
 
 * The Zigbee USB device is malfuntioning (try re-programming it) or it is not recognised on the Raspberry Pi USB serial port
 * A configuration problem with the zigbee2mqtt configuration file at /opt/zigbee2mqtt/data/configuration.yaml. 
-* This may be due to a problem with zigbee2mqtt not connecting to the Mosquitto Message Broker
+* A problem with zigbee2mqtt not connecting to the Mosquitto Message Broker (see MQTT Explorer comments above).
 
 
 
