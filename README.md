@@ -186,7 +186,7 @@ List of valid payloads below. eg. To set the Thermostat setpoint to **22.5 deg C
 Your Pi-ve will require the following software/firmware. Here is a list of software sources and brief instructions for installing the necessary software. I suggest installing and configuring the software in the order
 below, ensuring that things work properly at each stage of your build.
 
-Some guidance on software configuration is included in the next section (below).
+Some guidance on software configuration is included in the [next section (below).](https://github.com/roadsnail/Pi-ve/blob/main/README.md#pi-ve-software-configuration)
 
 ### Firmware
 * The CC2531 Zigbee USB Stick - Download and flash it with Koenkk's co-ordinator firmware. I followed the guide at https://www.zigbee2mqtt.io/information/alternative_flashing_methods.html flashing my CC2531 connected to a Raspberry pi.
@@ -218,13 +218,18 @@ sudo apt-get install mosquitto mosquitto-clients
 See official install guide here https://nodered.org/docs/getting-started/raspberrypi . Login as user Pi and in home directory run the command on the guide page. This will take some time on the Raspberry Pi Zero.
 
 ####Zigbee2mqtt
-Official installation guide at https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html . Note that in Step 2 of the guide - Installing - instructions to 
+Follow the Official installation guide at https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html AFTER reading the next two tips:-
+
+1. Step 2 of the guide - Installing - instructions to 
 install Node.js may be ignored as this will have been installed earlier in the node-RED install.
+
+2. Also in section 5 of the official guide, the instruction that refers to installation of Zigbee2MQTT on a Pi 1 or Zero and modification of 
+ExecStart should be ignored 
 
 Installation of Zigbee2mqtt will take a few minutes, with many warnings thrown up. Don't panic, these may be ignored.
 
 The installation guide should allow the Zigbee2MQTT software to start correctly, however in addition to the configuration settings given in the official guide, please take note 
-of the additional configuration notes below.
+of the additional configuration notes in the software configuration section [below.](https://github.com/roadsnail/Pi-ve/blob/main/README.md#pi-ve-software-configuration)
 
 ---
 ## Pi-ve software configuration
@@ -288,10 +293,10 @@ node-red-contrib-moment
 
 * Zigbee2mqtt
 
-As stated above, the 
+If you have successfully followed the official Zigbee2MQTT installation notes earlier, your Pi-ve should have started Zigbee and made a connection to the Mosquitto Message broker
+running on the Pi.
 
-If you already have a Zigbee network setup, then Pi-ve should be configured with a different unique pan_id. This should be taken care of by the network_key:GENERATE
-line in configuration.yaml under the advanced: section (see below).
+In addition to the 
 
 The webbased frontend to Zigbee2MQTT should be enabled to allow easier setup of the Zigbee connection from the CC2531 co-ordinator to the Hive SLR/SLT devices. This can be seen
 in the example configuration.yaml file below under the section frontend:
@@ -311,11 +316,7 @@ frontend:
   port: 7070
   host: 0.0.0.0
 advanced:
-  network_key: GENERATE
   log_level: error
   last_seen: epoch
-passlist:
-  - '0x001e5e09020bfef9'
-  - '0x001e5e0902039d4e'
   ```
 
