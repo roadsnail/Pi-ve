@@ -330,6 +330,28 @@ advanced:
   last_seen: epoch
   ```
 
+---
+## Review Progress and Check Software Components
+
+### Progress Review 
+
+So far, the Pi-ve software has been installed and hopefully configured correctly and all software components are working.
+
+If the configuration has got this far, then node-RED must be installed and working, as it is possible to connect to it with a browser connected to the Pi-ve IP address at port 1880
+
+It may be useful at this point to check that Mosquitto Message Broker is also functioning correctly, and that Zigbee2MQTT is running, can connect to the Message
+Broker, and it can at least connect to a functioning Zigbee co-ordinator (the CC2531). 
+
+
+---
+## Configure Hive Active SLR/SLT - Factory Reset and Join Pi-ve Zigbee Network
+
+
+
+
+Assuming this is the case, the Hive Active Thermostat (SLT) and Boiler Controller (SLR) can connect to the CC2531 Zigbee co-ordinator to form a 3 node
+Zigbee network.
+
 
 ---
 ## node-RED - Import flow
