@@ -1,9 +1,9 @@
 # Pi-ve
 A Raspberry Pi Zero W controls a Hive Active Thermostat (SLTx) /Boiler Controller (SLR2) - A standalone Central Heating (CH)/ Hot Water (HW) control solution (without the British Gas 'Cloud').
 
-Control your Central Heating/Hot Water boiler on your local network using Pi-ve controlled from:-
+Control your Central Heating/Hot Water boiler on your local network using Pi-ve from:-
 
-* Node-RED Dashboard (in a Web browser)
+* Node-RED Dashboard (runs in a Web browser from a device on your network)
 * HTTP Requests
 * Messages published to an onboard MQTT message broker
 
