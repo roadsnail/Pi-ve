@@ -466,26 +466,26 @@ name **SLR** for the device and 'Save Changes'. Similarly do the same for the SL
 
 
 
-#### Check Zigbee Topics 
+#### Check Zigbee Topic SLR
 
 
-At this point the controller may not publish a full list of MQTT messages on the its root topic pive2mqtt/SLR which are required by Pi-ve's node-RED flow 
-for control. To check the topics of messages published by the SLR, go to the web frontend screen, select the SLR device and the 'State' tab.
+At this point the controller may not publish a full list of parameters on the its root topic pive2mqtt/SLR which are required by Pi-ve's node-RED flow 
+for control. To check these, go to the web frontend screen, select the SLR device and the 'State' tab.
 
-The topics required for the Pi-ve are shown. Any additional topic are unused.
+Those required are highlighted. Any additional parameters are unused.
 
 ![ZigbeeState](https://user-images.githubusercontent.com/24318993/116720889-9a311180-a9d4-11eb-9263-09312501ff00.png)
 
 
-To enable the missing MQTT messages relating to CH and HW relay control -
+To enable any missing information -
 
-On the SLT3 thermostat:- Press MENU button Select 'Heat' and set to 'Manual' - Then press confirm button
+On the SLT3 model thermostat:- Press MENU button Select 'Heat' and set to 'Manual' - Then press confirm button
 
 Similarly (for Hot Water):-
 
 Press MENU button Select 'Hot Water' and set to 'Always On' - Then press confirm button
 
-On the SLT2 thermostat:- Press top right 'menu' button marked + to enable other switches Press Heat function button (marked right arrow) until the status changes to Manual Press Hot Water funtion button (marked left arrow) until the status changes to Off
+On the SLT2 model thermostat:- Press top right 'menu' button marked + to enable other switches Press Heat function button (marked right arrow) until the status changes to Manual Press Hot Water funtion button (marked left arrow) until the status changes to Off
 
 
 
@@ -496,4 +496,12 @@ On the SLT2 thermostat:- Press top right 'menu' button marked + to enable other 
 ---
 ## node-RED - Import flow
 
+To complete the software setup, copy the node-RED flow at https://github.com/roadsnail/Pi-ve/blob/e1a57c479150223ad6caa426052093341a0ca932/Pi-ve%20flow%20v1-30beta and import it as a new flow
+ in node-RED. Pointing a browser at http://pive-ip-address:1880 go to Menu - Import - New flow.
+ 
+The flow should deploy without warnings/errors and the Pi-ve dashboard should be available by pointing a web browser at http://pive-ip-address:1880/ui . If warnings about missing nodes appear, then check that the additional nodes were installed as listed above.
+
+
 ![Pi-ve 1-30b Screenshot](https://user-images.githubusercontent.com/24318993/116697598-4b2ab280-a9bb-11eb-9a23-5add8a49bdca.png)
+
+
