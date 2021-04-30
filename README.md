@@ -422,6 +422,9 @@ To allow the SLR/SLT devices to join the network, (Zigbee) 'Join' must be enable
 
 From a webbrowser, go to http://pi-ve-ip-address:7070 to access the Zigbee2MQTT frontend. If this fails, then review the section configuring Zigbee2MQTT above ensuring that the **frontend:**
  section in configuration.yaml has been set up.
+ 
+![Web-frontend-zigbee2mqtt](https://user-images.githubusercontent.com/24318993/116718597-0a8a6380-a9d2-11eb-91e7-52ebf5ffda10.png)
+* Web frontend Zigbee2MQTT screenshot - showing 'Join' button, the SLR/SLT devices and friendly names *
 
 Click on the 'join' button on the right hand side of the menu bar to display 'Permit join'. This should allow new Zigbee devices to join the network.
 
