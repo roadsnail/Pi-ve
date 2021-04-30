@@ -253,7 +253,7 @@ of the additional configuration notes in the Zigbee2MQTT software configuration 
 * ### Raspberry Pi OS
 Post-install configuration discussed above
 
-* Mosquitto MQTT Message Broker for Raspberry Pi
+* ### Mosquitto MQTT Message Broker for Raspberry Pi
 
 Create Mosquitto Configuration file located at /etc/mosquitto/mosquitto.conf, suggested contents
 
@@ -275,7 +275,7 @@ include_dir /etc/mosquitto/conf.d
 
 
 
-* node-RED
+* ### node-RED
 
 Following installation, set the SYSTEMD to start node-RED at startup thus:
 ```
@@ -311,7 +311,7 @@ Lastly, install some icon graphics used by the node-RED dashboard to indicate th
 (To be added...)
 
 
-* Zigbee2mqtt
+* ### Zigbee2mqtt
 
 If you have successfully followed the official Zigbee2MQTT installation notes earlier, your Pi-ve should have started Zigbee and made a connection to the Mosquitto Message broker
 running on the Pi.
