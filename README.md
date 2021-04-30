@@ -17,8 +17,14 @@ In addition, the Pi-ve may be controlled using MQTT commands OR HTTP Requests fr
 
 But why go to the trouble of controlling Hive Active from a Pi when it's easy to use the Hive Hub and control heating and hot water from the App?
 
-Well, the main reason I have taken this approach is to remove my dependance on the Hive Cloud and have full control over my boiler even during Hive system outages, (yes they do happen), and 
-ISP  
+Well, the main reason I have taken this approach is to remove my dependance on the Hive Cloud and have full local control over my boiler even during Hive system outages, (yes they do happen), and 
+ISP/Internet issues.
+
+The second reason is to remove any dependancy my Home Automation system has on Hive's undocumented APIs which may change without notice.
+
+Lastly, British Gas may decide at some time to stop supporting Hive Active. If or when that happens, my Hive investment will continue working.
+
+And lastly lastly, I have enjoyed the new challenge of 'coding' in node-RED and hacking together the javascript to enable the web interfaces into Pi-ve.
 
 ---
 
