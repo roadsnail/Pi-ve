@@ -308,7 +308,25 @@ node-red-contrib-moment
 
 Lastly, install some icon graphics used by the node-RED dashboard to indicate the SLR online and CH/HW demand status.
 
-(To be added...)
+Copy file Pive-images.tar.gz from the repository into user Pi home directory 
+
+Then enter the following tar command to unzip the images into node-RED.
+
+```
+pi@pive:~ $ tar -xzvf  Pive-images.tar.gz
+./.node-red/lib/ui-media/lib/Images/
+./.node-red/lib/ui-media/lib/Images/slr2-online.png
+./.node-red/lib/ui-media/lib/Images/manActiveHW.png
+./.node-red/lib/ui-media/lib/Images/HW_On.png
+./.node-red/lib/ui-media/lib/Images/slr2-offline.png
+./.node-red/lib/ui-media/lib/Images/tmrActiveCH.png
+./.node-red/lib/ui-media/lib/Images/HW_Off.png
+./.node-red/lib/ui-media/lib/Images/tmrActiveHW.png
+./.node-red/lib/ui-media/lib/Images/CH_On.png
+./.node-red/lib/ui-media/lib/Images/manActiveCH.png
+./.node-red/lib/ui-media/lib/Images/CH_Off.png
+```
+ 
 
 
 * ### Zigbee2mqtt
