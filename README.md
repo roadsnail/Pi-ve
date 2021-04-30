@@ -9,7 +9,7 @@ Control your Central Heating/Hot Water boiler on your local network using Pi-ve 
 
 The Node-RED dashboard Web page offers full control of CH and HW with up to 8 programmable 'On' periods per day plus Override/Boost functions.
 
-In addition, the Pi-ve may be controlled using MQTT commands OR HTTP Requests from an external system (eg. A Home Automation platform).
+In addition, the Pi-ve may be controlled using MQTT commands OR HTTP Requests from an external system (eg. A Home Automation platform or phone/tablet app).
 
 ![Pi-ve_1](https://user-images.githubusercontent.com/24318993/116269807-6c4e9180-a776-11eb-95e4-f6336ae7906d.png)
 
@@ -17,14 +17,15 @@ In addition, the Pi-ve may be controlled using MQTT commands OR HTTP Requests fr
 
 But why go to the trouble of controlling Hive Active from a Pi when it's easy to use the Hive Hub and control heating and hot water from the App?
 
-Well, the main reason I have taken this approach is to remove my dependance on the Hive Cloud and have full local control over my boiler even during Hive system outages, (yes they do happen), and 
+Well, the main reason I have taken this approach is to remove my dependance on the Hive Cloud and have full **local** control over my boiler even during Hive system outages, (yes they do happen), and 
 ISP/Internet issues.
 
-The second reason is to remove any dependancy my Home Automation system has on Hive's undocumented APIs which may change without notice.
+The second reason is to remove any dependancy my Home Automation system has on Hive's undocumented APIs which may change without notice. I have been caught out twice in the past when British Gas 
+ made changes.
 
 Lastly, British Gas may decide at some time to stop supporting Hive Active. If or when that happens, my Hive investment will continue working.
 
-And lastly lastly, I have enjoyed the new challenge of 'coding' in node-RED and hacking together the javascript to enable the web interfaces into Pi-ve.
+And lastly lastly, I have enjoyed the new challenges of 'coding' in node-RED and hacking together the javascript to enable the web interfaces into Pi-ve.
 
 ---
 
