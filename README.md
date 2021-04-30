@@ -466,21 +466,16 @@ name **SLR** for the device and 'Save Changes'. Similarly do the same for the SL
 
 
 
-* Testing (SLR2 and SLT3 combination)
-Following on from testing the older Hive Active SLT2 Thermostat working with the SLR2 Controller. I have done some preliminary testing of the newer Hive Active Thermostat, the SLT3 (shiny 
-with rotary encoder) and SLR2 combination.
+#### Check Zigbee Topics 
 
-Pairing of these is carried out in a similar manner to the SLR2/SLT2 versions.
 
-However, there are some differences in setup between the older SLT2 and newer SLT3 thermostats.
+At this point the controller may not publish a full list of MQTT messages on the its root topic pive2mqtt/SLR which are required by Pi-ve's node-RED flow 
+for control. To check the topics of messages published by the SLR, go to the web frontend screen, select the SLR device and the 'State' tab.
 
-I observed that following a factory reset of the SLT3 - It joined my Zigbee network and then went into setup mode - requesting a HW/CH schedule to be setup.
+The topics required for the Pi-ve are shown. Any additional topic are unused.
 
-This may be skipped and the thermostat subsequently displays the current temperature and status of CH/HW to both be 'Sch'
+![ZigbeeState](https://user-images.githubusercontent.com/24318993/116720889-9a311180-a9d4-11eb-9263-09312501ff00.png)
 
-At this point the controller does not publish a full list of MQTT messages on the its root topic zigbee2mqtt/FRIENDLY_NAME
-
-By connecting a 'debug' node to the output of the node-RED MQTT input node you can see that fewer messages are being sent from the Hive test system.
 
 To enable the missing MQTT messages relating to CH and HW relay control -
 
