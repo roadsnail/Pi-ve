@@ -299,13 +299,13 @@ running on the Pi.
 The following additions should be made to the Zigbee2MQTT configuration.yaml file to:-
 
 * Enable webbased frontend - The webbased frontend to Zigbee2MQTT should be enabled to allow easier setup of the Zigbee connection from the CC2531 co-ordinator to the Hive SLR/SLT devices. 
-This can be seen in the example configuration.yaml file below under the section frontend:
+This can be seen in the example configuration.yaml file below under the section **frontend:**
 
 Documentation for the webbased frontend may be found [here](https://www.zigbee2mqtt.io/information/frontend.html)
 
-* In the mqtt: section - Modify the base_topic to be pive2mqtt (see below)
+* In the **mqtt:** section - Modify the **base_topic:** to be **pive2mqtt** (see below)
 
-* In the advanced: section - Set log_level: to error and last_seen: to epoch (see example configuration.yaml)
+* In the **advanced:** section - Set **log_level:** to **error** and **last_seen:** to **epoch** (see example configuration.yaml below)
 
 After making any changes, either reboot your Pi, or restart zigbee2mqtt 
 ```
