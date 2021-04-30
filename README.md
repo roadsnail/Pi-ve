@@ -250,7 +250,7 @@ of the additional configuration notes in the Zigbee2MQTT software configuration 
 ---
 ## Pi-ve software configuration
 
-* Raspberry Pi OS
+* ### Raspberry Pi OS
 Post-install configuration discussed above
 
 * Mosquitto MQTT Message Broker for Raspberry Pi
