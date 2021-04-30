@@ -342,6 +342,68 @@ If the configuration has got this far, then node-RED must be installed and worki
 It may be useful at this point to check that Mosquitto Message Broker is also functioning correctly, and that Zigbee2MQTT is running, can connect to the Message
 Broker, and it can at least connect to a functioning Zigbee co-ordinator (the CC2531). 
 
+#### Mosquitto Message Broker Status
+
+Check the status of the Message Broker service:
+```
+pi@pive:~ $ sudo systemctl status mosquitto
+● mosquitto.service - Mosquitto MQTT v3.1/v3.1.1 Broker
+   Loaded: loaded (/lib/systemd/system/mosquitto.service; enabled; vendor preset: enabled)
+   Active: active (running) since Fri 2021-04-30 12:59:25 BST; 1h 11min ago
+     Docs: man:mosquitto.conf(5)
+           man:mosquitto(8)
+ Main PID: 366 (mosquitto)
+    Tasks: 1 (limit: 877)
+   CGroup: /system.slice/mosquitto.service
+           └─366 /usr/sbin/mosquitto -c /etc/mosquitto/mosquitto.conf
+
+Apr 30 12:59:24 pive systemd[1]: Starting Mosquitto MQTT v3.1/v3.1.1 Broker...
+Apr 30 12:59:25 pive systemd[1]: Started Mosquitto MQTT v3.1/v3.1.1 Broker.
+pi@pive:~ $
+```
+
+The command **sudo systemctl status mosquitto**  should return something similar to the above.
+If not, then the prime suspect will almost certainly be a problem with options in the Mosquitto configuration file.
+
+
+#### The Zigbee2MQTT Service Status 
+
+Similarly, check the Zigbee2MQTT service status:
+
+```
+pi@pive:~ $ sudo systemctl status zigbee2mqtt
+● zigbee2mqtt.service - zigbee2mqtt
+   Loaded: loaded (/etc/systemd/system/zigbee2mqtt.service; enabled; vendor preset: enabled)
+   Active: active (running) since Fri 2021-04-30 13:15:34 BST; 54min ago
+ Main PID: 654 (node)
+    Tasks: 23 (limit: 877)
+   CGroup: /system.slice/zigbee2mqtt.service
+           ├─654 npm
+           ├─668 sh -c node index.js
+           └─669 node index.js
+
+Apr 30 13:15:34 pive systemd[1]: Started zigbee2mqtt.
+pi@pive:~ $
+```
+
+The command **sudo systemctl status zigbee2mqtt**  should return something similar to the above.
+If not, then check logs (syslog) just after stopping ( $ sudo systemctl stop zigbee2mqtt) then starting ( $ sudo systemctl start zigbee2mqtt)
+
+The logs should give a clue as to what is stopping the service coming up cleanly. 
+
+Useful information can be found at the official Zigbee2MQTT documentation site [here](https://www.zigbee2mqtt.io/information/FAQ.html)
+
+The usual suspects are:
+
+* The Zigbee USB device is malfuntioning (try re-programming it) or it is not recognised on the Raspberry Pi USB serial port
+* A configuration problem with the zigbee2mqtt configuration file at /opt/zigbee2mqtt/data/configuration.yaml. 
+* This may be due to a problem with zigbee2mqtt not connecting to the Mosquitto Message Broker
+
+
+
+
+
+
 
 ---
 ## Configure Hive Active SLR/SLT - Factory Reset and Join Pi-ve Zigbee Network
