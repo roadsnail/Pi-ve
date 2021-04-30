@@ -15,7 +15,7 @@ In addition, the Pi-ve may be controlled using MQTT commands OR HTTP Requests fr
 
 *Pi-ve System - SLR2, Zigbee USB Stick (attached to Raspberry Pi Zero W), SLT2*
 
-But why go to the trouble of controlling Hive Active from a Pi when it's easy to use the Hive Hub and control heating and hot water from the App?
+But why go to the trouble of controlling Hive Active from a Pi when it's easy to use the Hive Hub and control heating and hot water from the Hive App?
 
 Well, the main reason I have taken this approach is to remove my dependence on the Hive Cloud and have full **local** control over my boiler even during Hive system outages, (yes they do happen), and 
 ISP/Internet issues.
@@ -73,7 +73,7 @@ Firmware:
 If you are confident and happy with the warning above and want to make your own Pi-ve, then here is a list of parts:-
 
 
-* The Hive Active components, the SLT (Thermostat) and SLR2 (Boiler Controller), are easily obtained used from the usual places. The Hive Active hub is not required as this will be replaced by the Raspberry Pi. 
+* The Hive Active components, the SLT (Thermostat) and SLR2 (Boiler Controller), are easily obtained used from the usual Internet auction places. The Hive Active hub is not required as this will be replaced by the Raspberry Pi. 
 *Although the above picture shows the older thermostat (SLT2). A newer SLT3 may be used instead.*
  
 * A Pi Zero W was a freebie when I subscribed to the excellent MagPi magazine. See https://magpi.raspberrypi.org/. Alternatively, these are readily available as a kit including a case and a USB OTG Host cable.
@@ -285,10 +285,10 @@ pi@pive:~ $
 pi@pive:~ $ sudo systemctl start nodered
 ```
 
-Reboot your Pi-ve and ensure node-RED is started by pointing a browser at http://pive-ip-address:1880 and ensure node-RED responds
+Reboot your Pi-ve and ensure node-RED is started by pointing a browser at http://pive-ip-address:1880 and ensure node-RED responds with an empty flow screen.
 
 
-Next, install some additional node-RED nodes required by the flow listed below. 
+Next, install some additional node-RED nodes required by the Pi-ve flow (when we install it later). 
 
 These may be installed at the node-RED flow creation screen by selecting 'MENU' - Manage palette
 
@@ -305,6 +305,10 @@ node-red-contrib-ui-media
 node-red-contrib-simple-gate
 node-red-contrib-moment
 ```
+
+Lastly, install some icon graphics used by the node-RED dashboard to indicate the SLR online and CH/HW demand status.
+
+(To be added...)
 
 
 * Zigbee2mqtt
