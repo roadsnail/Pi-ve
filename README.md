@@ -418,12 +418,12 @@ The usual suspects are:
 The Hive Active Thermostat (SLT) and Boiler Controller (SLR) can now be connected to the CC2531 Zigbee co-ordinator to form a 3 node
 Zigbee network.
 
-To allow the SLR/SLT devices to join the network, 'Join' must be enable on the Pi. 
+To allow the SLR/SLT devices to join the network, (Zigbee) 'Join' must be enabled on the Pi. 
 
 From a webbrowser, go to http://pi-ve-ip-address:7070 to access the Zigbee2MQTT frontend. If this fails, then review the section configuring Zigbee2MQTT above ensuring that the **frontend:**
-section in configuration.yaml has been set up.
+ section in configuration.yaml has been set up.
 
-Click on the 'Disable join' button on the menu bar to display 'Permit join'. This should allow new Zigbee devices to join the network.
+Click on the 'join' button on the right hand side of the menu bar to display 'Permit join'. This should allow new Zigbee devices to join the network.
 
 Next, the SLR/SLT should both be factory reset and placed into pairing mode (detailed procedure below). Firstly, the SLR will be reset and paired, we should observe log messages 
 appearing on the web frontend
@@ -434,20 +434,33 @@ web frontend Devices list, and the SLR status LED will be a solid green.
  
 
 
-#### Pairing Instructions for the Hive Active SLR and SLT2/SLT3
+#### Zigbee Pairing Instructions for the Hive Active SLR and SLT2/SLT3
 
 * Remove a battery from the Hive Active Thermostat (SLT2 or SLT3)
 * Enable Zigbee2MQTT to allow the Pi-ve to accept new devices. (Click the Zigbee2MQTT web frontend 'Pair' button. Log messages should show pairing activity as it happens)
-* On the Boiler Controller SLR2, press and hold the 'Central Heating' button until it's LED flashes pink. Release then press and hold it again. It will flash amber, pairing should begin and the 
-controller should join the network - While still in pairing mode:-
-* Replace batteries in the Hive Active Thermostat (SLT2 or SLT3) WHILE pressing 'back' and 'menu' buttons on the SLT3 OR the '+' and '-' buttons on the SLT2" to perform a factory reset. It will, reset, reboot 
+* On the Boiler Controller SLR2, press and hold the 'Central Heating' button until its LED flashes pink. Release then press and hold it again. It will flash amber, pairing should begin and the 
+controller should join the network and an entry will appear in the web frontend.
+
+While still in pairing mode:-
+
+* Replace batteries in the Hive Active Thermostat (SLT2 or SLT3) WHILE pressing 'back' and 'menu' buttons on the SLT3 OR the '+' and '-' buttons on the SLT2 to perform a factory reset. It will, reset, reboot 
 and join the network (check log messages on the web frontend screen).
 * The LED on the Boiler Controller should turn solid green and the SLR/SLT's should be joined to the Zigbee network.
 
 * SLT3 ONLY - After joining the network, the Thermostat goes into a setup mode requesting Hot Water and Central Heating schedules to be setup. Do NOT accept the option to set these up and the
-thermostat will just display the current temperature and the status of CH and HW will be shown as 'Sch'
+thermostat should just display the current temperature and the status of CH and HW will be shown as 'Sch'
 
 * Finally click the web frontend 'Join' button to disable other devices from joining the network.
+
+* The web frontend screen should now show two new devices successfully connected to the Pi-ve Zigbee network.
+
+* The last step is to set 'friendly names' for the SLR/SLT devices as these are used later in the node-RED flows when referring to Mosquitto Message Broker topics - So, in the devices screen on the 
+web frontend, click on the 'unfriendly' hexadecimal name for the SLR device. A description screen is displayed with an edit (pencil icon) option at the bottom left. Click that and enter a friendly
+name **SLR** for the device and 'Save Changes'. Similarly do the same for the SLT device and make its friendly name **SLT** and 'Save Changes'.
+
+
+
+
 
 
 * Testing (SLR2 and SLT3 combination)
