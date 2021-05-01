@@ -543,3 +543,13 @@ The flow should deploy without warnings/errors and the Pi-ve dashboard should be
 ![Pi-ve 1-30b Screenshot](https://user-images.githubusercontent.com/24318993/116697598-4b2ab280-a9bb-11eb-9a23-5add8a49bdca.png)
 
 
+
+---
+## Attributions
+
+The following ICONS requiring attribution are used in the Pi-ve dashboard:-
+
+Hot Water Demand Off/On - Icon made by Freepik from www.flaticon.com
+Heating Demand Off/On - Icon made by Flat Icons from www.flaticon.com
+
+
