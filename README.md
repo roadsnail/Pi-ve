@@ -548,8 +548,7 @@ The flow should deploy without warnings/errors and the Pi-ve dashboard should be
 
 There are between 1 and a maximum of 8 timed 'On' periods per day for both Heating and Hot Water. Heating and/or Hot Water is 'Off' during the periods between the Time Slots.
 
-By default, the current day's Time Slots should be listed. Pressing a 'Day' button selects all of the Time Slots for a particular day for both Heating and Hot Water. These
- are listed under the HW Daily Time Slots and CH Daily Time Slots columns. 
+By default, the current day's Time Slots are listed under the HW Daily Time Slots and CH Daily Time Slots columns. Pressing a 'Day' button selects all of the Time Slots for a particular day for both Heating and Hot Water. 
  
 The Time Slots are changed using the four buttons: SAVE, CANCEL, ADD and DELETE.
 
