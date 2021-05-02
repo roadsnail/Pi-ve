@@ -543,6 +543,32 @@ The flow should deploy without warnings/errors and the Pi-ve dashboard should be
 ![Pi-ve 1-30b Screenshot](https://user-images.githubusercontent.com/24318993/116697598-4b2ab280-a9bb-11eb-9a23-5add8a49bdca.png)
 
 
+---
+## Pi-ve Dashboard Timed Off/On Slots (in timer (TMR) Mode)
+
+There are between 1 and a maximum of 8 timed 'On' periods per day for both Heating and Hot Water. Heating and/or Hot Water is 'Off' during the periods between the Time Slots.
+
+By default, the current day's Time Slots should be listed. Pressing a 'Day' button selects all of the Time Slots for a particular day for both Heating and Hot Water. These
+ are listed under the HW Daily Time Slots and CH Daily Time Slots columns. 
+ 
+The Time Slots are changed using the four buttons: SAVE, CANCEL ADD and DELETE.
+
+* SAVE
+Selecting a Time Slot will show that slot's start and end times under the HW Edit Time Slot and CH Edit Time Slot columns. 
+
+These(On) times may be changed, then pressing the 'SAVE' button will store the new times. Checks are made to ensure the start/end times do not overlap with previous and later Time Slots.
+
+* CANCEL
+Will cancel any modifications in progress to the start/end times and restore the original times to the Edit columns
+
+* ADD
+Inserts a new Time Slot after the currently time slot highlighted in the Daily Time Slot columns
+
+* DELETE
+Removes the selected Time Slot from the daily list. Note that Time Slot one cannot be deleted and attempting to delete will result in an error
+
+ 
+
 
 ---
 ## Attributions
