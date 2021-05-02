@@ -205,7 +205,7 @@ below, ensuring that things work properly at each stage of your build.
 Some guidance on software configuration is included in the [next section (below).](https://github.com/roadsnail/Pi-ve/blob/main/README.md#pi-ve-software-configuration)
 
 ### Firmware
-* The CC2531 Zigbee USB Stick - Download and flash it with Koenkk's co-ordinator firmware. I followed the guide at https://www.zigbee2mqtt.io/information/alternative_flashing_methods.html flashing my CC2531 connected to a Raspberry pi.
+* The CC2531 Zigbee USB Stick - Download and flash it with Koenkk's co-ordinator firmware https://github.com/Koenkk/Z-Stack-firmware/raw/master/coordinator/Z-Stack_Home_1.2/bin/default/CC2531_DEFAULT_20201127.zip. I followed the guide at https://www.zigbee2mqtt.io/information/alternative_flashing_methods.html flashing my CC2531 connected to a Raspberry pi.
 
 Other Zigbee USB solutions may be used for this project. I just happened to have a CC2531 surplus to requirements as I have upgraded my main Zigbee network controller to a TI 
 CC2652R based module. In my experience, the CC2531 is great at controlling just a few Zigbee devices but struggles with larger Zigbee networks. In this application, the CC2531 copes 
