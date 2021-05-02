@@ -553,17 +553,13 @@ By default, the current day's Time Slots should be listed. Pressing a 'Day' butt
  
 The Time Slots are changed using the four buttons: SAVE, CANCEL ADD and DELETE.
 
-* SAVE
-Selecting a Time Slot will show that slot's start and end times under the HW Edit Time Slot and CH Edit Time Slot columns. These(On) times may be changed, then pressing the 'SAVE' button will store the new times. Checks are made to ensure the start/end times do not overlap with previous and later Time Slots.
+* SAVE - Selecting a Time Slot will show that slot's start and end times under the HW Edit Time Slot and CH Edit Time Slot columns. These(On) times may be changed, then pressing the 'SAVE' button will store the new times. Checks are made to ensure the start/end times do not overlap with previous and later Time Slots.
 
-* CANCEL
-Will cancel any modifications in progress to the start/end times and restore the original times to the Edit columns
+* CANCEL - Will cancel any modifications in progress to the start/end times and restore the original times to the Edit columns
 
-* ADD
-Inserts a new Time Slot after the currently time slot highlighted in the Daily Time Slot columns
+* ADD - Inserts a new Time Slot after the currently time slot highlighted in the Daily Time Slot columns
 
-* DELETE
-Removes the selected Time Slot from the daily list. Note that Time Slot one cannot be deleted and attempting to delete will result in an error
+* DELETE - Removes the selected Time Slot from the daily list. Note that Time Slot one cannot be deleted and attempting to delete will result in an error
 
  
 
