@@ -552,7 +552,7 @@ By default, the current day's Time Slots are listed under the HW Daily Time Slot
  
 The 'C' Button will restore default Time Slots for the whole week and should be used with care. 
  
-The Time Slots are changed using the four buttons: SAVE, CANCEL, ADD and DELETE.
+The (selected) Time Slots are modified using the four buttons: SAVE, CANCEL, ADD and DELETE.
 
 * SAVE - Selecting a Time Slot will show that slot's start and end times under the HW Edit Time Slot and CH Edit Time Slot columns. These(On) times may be changed, then pressing the 'SAVE' button will store the new times. Checks are made to ensure the start/end times do not overlap with previous and later Time Slots.
 
