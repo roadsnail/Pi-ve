@@ -215,7 +215,7 @@ easily with just two Zigbee connections (the Hive SLR and SLT).
 #### Raspberry Pi OS 
 https://www.raspberrypi.org/software/operating-systems/ . There are plenty of guides explaining how to install Raspberry Pi OS onto the Pi Zero W so that you may connect in 'headless' mode.
 
-Following the installation of the OS, connect to your Pi and run raspi-config to:-
+Following the installation of the OS, connect to your Pi and run raspi-config (```sudo raspi-config```) and:-
 
 1. Set a new password for user Pi (mandatory)
 2. Set a Hostname for your Pi. I suggest Pive. 
