@@ -571,6 +571,7 @@ The (selected) Time Slots are modified using the four buttons: SAVE, CANCEL, ADD
 The following ICONS requiring attribution are used in the Pi-ve dashboard:-
 
 Hot Water Demand Off/On - Icon made by Freepik from www.flaticon.com
+
 Heating Demand Off/On - Icon made by Flat Icons from www.flaticon.com
 
 
