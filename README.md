@@ -558,7 +558,7 @@ On the SLT2 model thermostat:- Press top right 'menu' button marked + to enable 
 ---
 ## node-RED - Import flow
 
-To complete the software setup, copy the node-RED flow at https://github.com/roadsnail/Pi-ve/blob/e1a57c479150223ad6caa426052093341a0ca932/Pi-ve%20flow%20v1-30beta and import it as a new flow
+To complete the software setup, copy the node-RED flow at https://github.com/roadsnail/Pi-ve/blob/main/Pi-ve%20flow%20v1-40beta and import it as a new flow
  in node-RED. Pointing a browser at http://your-pive-ip-address:1880 go to Menu - Import - New flow.
  
 The flow should deploy without warnings/errors and the Pi-ve dashboard should be available by pointing a web browser at http://your-pive-ip-address:1880/ui . If warnings about missing nodes appear, then check that the additional nodes were installed as listed above.
