@@ -4,8 +4,8 @@ A Raspberry Pi Zero W controls a Hive Active Thermostat (SLTx) /Boiler Controlle
 Control your Central Heating/Hot Water boiler on your local network using Pi-ve from:-
 
 * Node-RED Dashboard (runs in a Web browser from a device on your network)
-* HTTP Requests
-* Messages published to an onboard MQTT message broker
+* HTTP Requests (GET and/or POST Methods)
+* MQTT Messages published to Pi-ve's Mosquitto message broker
 
 The Node-RED dashboard Web page offers full control of CH and HW with up to 8 programmable 'On' periods per day plus Override/Boost functions.
 
