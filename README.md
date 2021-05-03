@@ -142,26 +142,28 @@ better optimised for small screen devices.
 
 Basic control of Pi-ve from a simple HTTP GET request command:-
 
-* curl http://ip-address:1880/ctrl/CHOff			*Set CH Switch to Off*
-* curl http://ip-address:1880/ctrl/CHOn				*Set CH Switch to On*
-* curl http://ip-address:1880/ctrl/CHBoost30		*Set CH Boost for 30 mins*
-* curl http://ip-address:1880/ctrl/CHBoost60		*Set CH Boost for 60 mins*
-* curl http://ip-address:1880/ctrl/CHBoost90		*Set CH Boost for 90 mins*
-* curl http://ip-address:1880/ctrl/CHBoostC			*Set CH Boost to off*
+### Central Heating
+* curl http://your-pive-ip-address:1880/ctrl/CHOff			*Set CH Switch to Off*
+* curl http://your-pive-ip-address:1880/ctrl/CHOn				*Set CH Switch to On*
+* curl http://your-pive-ip-address:1880/ctrl/CHBoost30		*Set CH Boost for 30 mins*
+* curl http://your-pive-ip-address:1880/ctrl/CHBoost60		*Set CH Boost for 60 mins*
+* curl http://your-pive-ip-address:1880/ctrl/CHBoost90		*Set CH Boost for 90 mins*
+* curl http://your-pive-ip-address:1880/ctrl/CHBoostC			*Set CH Boost to off*
 
-* curl http://ip-address:1880/ctrl/HWOff			*Set HW Switch to Off*
-* curl http://ip-address:1880/ctrl/HWOn				*Set HW Switch to On*
-* curl http://ip-address:1880/ctrl/HWBoost30		*Set HW Boost for 30 mins*
-* curl http://ip-address:1880/ctrl/HWBoost60		*Set HW Boost for 60 mins*
-* curl http://ip-address:1880/ctrl/HWBoost90		*Set HW Boost for 90 mins*
-* curl http://ip-address:1880/ctrl/HWBoostC			*Set HW Boost to off*
+### Hot Water
+* curl http://your-pive-ip-address:1880/ctrl/HWOff			*Set HW Switch to Off*
+* curl http://your-pive-ip-address:1880/ctrl/HWOn				*Set HW Switch to On*
+* curl http://your-pive-ip-address:1880/ctrl/HWBoost30		*Set HW Boost for 30 mins*
+* curl http://your-pive-ip-address:1880/ctrl/HWBoost60		*Set HW Boost for 60 mins*
+* curl http://your-pive-ip-address:1880/ctrl/HWBoost90		*Set HW Boost for 90 mins*
+* curl http://your-pive-ip-address:1880/ctrl/HWBoostC			*Set HW Boost to off*
 ---
 
 ## Control Pi-ve with HTTP request method POST
 
 Pi-ve may be controlled using HTTP JSON formatted requests:-
 
-POST HTTP://ip-address:1880/cmd with Content-Type: application/json
+POST HTTP://your-pive-ip-address:1880/cmd with Content-Type: application/json
 
 List of valid payloads below (in and including the curly brackets). eg. To switch the HW output to off, POST json **{"HW":"Off"}**
 
@@ -307,7 +309,7 @@ pi@pive:~ $
 pi@pive:~ $ sudo systemctl start nodered
 ```
 
-Reboot your Pi-ve and ensure node-RED is started by pointing a browser at http://pive-ip-address:1880 and ensure node-RED responds with an empty flow screen.
+Reboot your Pi-ve and ensure node-RED is started by pointing a browser at http://your-pive-ip-address:1880 and ensure node-RED responds with an empty flow screen.
 
 
 Next, install some additional node-RED nodes required by the Pi-ve flow (when we install it later). 
@@ -557,9 +559,9 @@ On the SLT2 model thermostat:- Press top right 'menu' button marked + to enable 
 ## node-RED - Import flow
 
 To complete the software setup, copy the node-RED flow at https://github.com/roadsnail/Pi-ve/blob/e1a57c479150223ad6caa426052093341a0ca932/Pi-ve%20flow%20v1-30beta and import it as a new flow
- in node-RED. Pointing a browser at http://pive-ip-address:1880 go to Menu - Import - New flow.
+ in node-RED. Pointing a browser at http://your-pive-ip-address:1880 go to Menu - Import - New flow.
  
-The flow should deploy without warnings/errors and the Pi-ve dashboard should be available by pointing a web browser at http://pive-ip-address:1880/ui . If warnings about missing nodes appear, then check that the additional nodes were installed as listed above.
+The flow should deploy without warnings/errors and the Pi-ve dashboard should be available by pointing a web browser at http://your-pive-ip-address:1880/ui . If warnings about missing nodes appear, then check that the additional nodes were installed as listed above.
 
 
 ![Pi-ve 1-30b Screenshot](https://user-images.githubusercontent.com/24318993/116697598-4b2ab280-a9bb-11eb-9a23-5add8a49bdca.png)
