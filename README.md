@@ -36,13 +36,16 @@ And lastly lastly, I have enjoyed the new challenges of 'coding' in node-RED and
 3. [Can I use a Raspberry Pi 3 or 4?](https://github.com/roadsnail/Pi-ve#can-i-use-a-raspberry-pi-3-or-4)
 4. [The Pi-ve Dashboard - Set up CH/HW 'On' Timers, 'Boost' and Control your Heating/Hot Water from your Pi-ve](https://github.com/roadsnail/Pi-ve#the-pi-ve-dashboard---set-up-chhw-on-timers-boost-and-control-your-heatinghot-water-from-your-pi-ve)
 5. [The Pi-ve HTTP Screen - Control Pi-ve with HTTP requests](https://github.com/roadsnail/Pi-ve#the-pi-ve-http-screen---control-pi-ve-with-http-requests)
-6. [Control Pi-ve with HTTP request method POST](https://github.com/roadsnail/Pi-ve#control-pi-ve-with-http-request-method-post)
-7. [Control Pi-ve by Publishing to Topics on Pi-ve Mosquitto Message Broker](https://github.com/roadsnail/Pi-ve#control-pi-ve-by-publishing-to-topics-on-pi-ve-mosquitto-message-broker)
-8. [Software/Firmware Sources](https://github.com/roadsnail/Pi-ve#softwarefirmware-sources)
-9. [Pi-ve software configuration](https://github.com/roadsnail/Pi-ve#pi-ve-software-configuration)
-10. [Review Progress and Check Software Components](https://github.com/roadsnail/Pi-ve#review-progress-and-check-software-components)
-11. [Configure Hive Active SLR/SLT - Factory Reset and Join Pi-ve Zigbee Network](https://github.com/roadsnail/Pi-ve#configure-hive-active-slrslt---factory-reset-and-join-pi-ve-zigbee-network)
-12. [node-RED - Import flow](https://github.com/roadsnail/Pi-ve#node-red---import-flow)
+6. [Control Pi-ve with HTTP GET Request using curl]
+7. [Control Pi-ve with HTTP request method POST](https://github.com/roadsnail/Pi-ve#control-pi-ve-with-http-request-method-post)
+8. [Control Pi-ve by Publishing to Topics on Pi-ve Mosquitto Message Broker](https://github.com/roadsnail/Pi-ve#control-pi-ve-by-publishing-to-topics-on-pi-ve-mosquitto-message-broker)
+9. [Software/Firmware Sources](https://github.com/roadsnail/Pi-ve#softwarefirmware-sources)
+10. [Pi-ve software configuration](https://github.com/roadsnail/Pi-ve#pi-ve-software-configuration)
+11. [Review Progress and Check Software Components](https://github.com/roadsnail/Pi-ve#review-progress-and-check-software-components)
+12. [Configure Hive Active SLR/SLT - Factory Reset and Join Pi-ve Zigbee Network](https://github.com/roadsnail/Pi-ve#configure-hive-active-slrslt---factory-reset-and-join-pi-ve-zigbee-network)
+13. [node-RED - Import flow](https://github.com/roadsnail/Pi-ve#node-red---import-flow)
+14. [Pi-ve Dashboard Timed Off/On Slots (in timer (TMR) Mode)]
+15. [Attributions]
 
 
 ---
@@ -133,6 +136,25 @@ A screenshot showing Off/On, Manual/Timer Mode and Boost buttons on a simple bro
 This allows basic control of the Pi-ve without the 'Time Slot' editing functions provided by the Node-RED Dashboard screen. Although not offering Time Slot editing functions, it is 
 better optimised for small screen devices.
 
+---
+
+## Control Pi-ve with HTTP GET Request using curl
+
+Basic control of Pi-ve from a simple HTTP GET request commands:-
+
+* curl http://ip-address:1880/ctrl/CHOff			*Set CH Switch to Off*
+* curl http://ip-address:1880/ctrl/CHOn				*Set CH Switch to On*
+* curl http://ip-address:1880/ctrl/CHBoost30		*Set CH Boost for 30 mins*
+* curl http://ip-address:1880/ctrl/CHBoost60		*Set CH Boost for 60 mins*
+* curl http://ip-address:1880/ctrl/CHBoost90		*Set CH Boost for 90 mins*
+* curl http://ip-address:1880/ctrl/CHBoostC			*Set CH Boost to off*
+
+* curl http://ip-address:1880/ctrl/HWOff			*Set HW Switch to Off*
+* curl http://ip-address:1880/ctrl/HWOn				*Set HW Switch to On*
+* curl http://ip-address:1880/ctrl/HWBoost30		*Set HW Boost for 30 mins*
+* curl http://ip-address:1880/ctrl/HWBoost60		*Set HW Boost for 60 mins*
+* curl http://ip-address:1880/ctrl/HWBoost90		*Set HW Boost for 90 mins*
+* curl http://ip-address:1880/ctrl/HWBoostC			*Set HW Boost to off*
 ---
 
 ## Control Pi-ve with HTTP request method POST
