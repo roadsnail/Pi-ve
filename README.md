@@ -142,6 +142,9 @@ better optimised for small screen devices.
 
 Basic control of Pi-ve from a simple HTTP GET request command:-
 
+### Thermostat setpoint
+* curl http://your-pive-ip-address:1880/ctrl/SP?temp=22.5	*Set Thermostat setpoint to 22.5 degrees C. (Range 1-30, Increments 0.5)*
+
 ### Central Heating
 * curl http://your-pive-ip-address:1880/ctrl/CHOff			*Set CH Switch to Off*
 * curl http://your-pive-ip-address:1880/ctrl/CHOn				*Set CH Switch to On*
