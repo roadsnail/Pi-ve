@@ -56,7 +56,7 @@ And lastly lastly, I have enjoyed the new challenges of 'coding' in node-RED and
 Hardware: 
 * 1 off Raspberry Pi Zero W (kit inc. Case and micro-USB cable) + PSU + micro SD card 
 * 1 off Zigbee USB Controller (eg. CC2531) + USB Housing +
-* British Gas Hive Active Heating Thermostat/Boiler Controller (SLR2/SLT2) or (SLR2/SLT3). The Hive Active Hub is NOT required.
+* British Gas Hive Active Heating Thermostat/Boiler Controller (models SLR2/SLT2) or (models SLR2/SLT3). The Hive Active Hub is NOT required.
 
 Software:
 * Raspberry Pi OS (Buster Lite)
@@ -95,8 +95,9 @@ Alternatively, buy a Hive Active system and install it, but where's the fun and 
 
 ## Can I use a Raspberry Pi 3 or 4?
 
-Yes, of course. Model 3 and 4 have onboard Wifi making them very suitable for this project. The reason I chose a model Zero W was it has onboard Wifi and I had one surplus to requirements.
-In addition, my Pi-ve also runs an additional task of listening to my Bluetooth LE thermometers and relaying temperature data to my Home Automation system. But that's another story...
+Yes, of course. Model 3 and 4 have onboard Wifi making them very suitable for this project. The reason I chose a model Zero W was it has onboard Wifi allowing me to place it somewhere
+ convenient where it is in good Zigbee network range for the SLR/SLT and Wifi range. I also had one surplus to requirements.
+In addition, my Pi-ve runs an additional task of listening to my Bluetooth LE thermometers and relaying temperature data to my Home Automation system. But that's another story...
 
 ---
 
@@ -361,7 +362,7 @@ pi@pive:~ $ tar -xzvf  Pive-images.tar.gz
 If you have successfully followed the official Zigbee2MQTT installation notes earlier, your Pi-ve should have started Zigbee and made a connection to the Mosquitto Message broker
 running on the Pi.
 
-#### Zigbee2MQTT Confuiguration - Addition Steps
+#### Zigbee2MQTT Configuration - Additional Steps
 Make the following additions should to the Zigbee2MQTT configuration.yaml file to:-
 
 * Enable the web-based frontend - The web-based frontend to Zigbee2MQTT should be enabled to allow the easier setup of the Zigbee connection from the CC2531 co-ordinator to the Hive SLR/SLT devices. 
