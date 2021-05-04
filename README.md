@@ -495,34 +495,36 @@ From a webbrowser, go to http://pi-ve-ip-address:7070 to access the Zigbee2MQTT 
 
 Click on the 'join' button on the right-hand side of the menu bar to display 'Permit join'. This should allow new Zigbee devices to join the network.
 
-Next, the SLR/SLT should both be factory reset and placed into pairing mode (detailed procedure below). Firstly, the SLR will be reset and paired, we should observe log messages 
-appearing on the web frontend
-screen as it goes through its pairing procedure. As soon as pairing has finished, we will observe that the SLR remains in pairing mode waiting for the SLT to pair with it.
+Next, the SLR/SLT should both be factory reset and placed into pairing mode. Here is an overview of the process, a detailed description of pairing is below. 
 
-We next reset the SLT and place it into pairing mode and observe it pair with the Pi-ve AND the SLR. If this has been successful, then the SLR/SLT will appear in the 
-web frontend Devices list and the SLR status LED will be solid green.
+Stage 1. Firstly, the SLR will be reset and paired, we should observe log messages appearing on the zigbee2MQTT web frontend
+screen as it pairs with the CC2531 co-ordinator.
+
+Stage 2. As soon as pairing (of the SLR) has finished, it remains in pairing mode waiting for the SLT to pair with it. So, reset the SLT, place it into pairing mode and observe it pair with the Pi-ve AND the SLR. If this has been successful, then the SLR/SLT will appear in the 
+web frontend Devices list and the SLR status LED will change to solid green.
  
 
 
 #### Zigbee Pairing Instructions for the Hive Active SLR and SLT2/SLT3
 
-* Remove a battery from the Hive Active Thermostat (SLT2 or SLT3)
+* Remove a battery from the Hive Active Thermostat (model SLT2 or SLT3)
 * Enable Zigbee2MQTT to allow the Pi-ve to accept new devices. (Click the Zigbee2MQTT web frontend 'Pair' button. Log messages should show pairing activity as it happens)
 * On the Boiler Controller SLR2, press and hold the 'Central Heating' button until its LED flashes pink. Release then press and hold it again. It will flash amber, pairing should begin and the 
-controller should join the network and an entry will appear in the web frontend.
+controller should join the network, log messages occur and an entry for the SLR will appear in the web frontend. (See above picture).
 
-While still in pairing mode:-
+While Zigbee2MQTT is still in pairing mode:-
 
-* Replace batteries in the Hive Active Thermostat (SLT2 or SLT3) WHILE pressing 'back' and 'menu' buttons on the SLT3 OR the '+' and '-' buttons on the SLT2 to perform a factory reset. It will, reset, reboot 
-and join the network (check log messages on the web frontend screen).
-* The LED on the Boiler Controller should turn solid green and the SLR/SLT's should be joined to the Zigbee network.
+* Replace batteries in the Hive Active Thermostat (SLT2 or SLT3) WHILE pressing 'back' and 'menu' buttons on the SLT3 OR the '+' and '-' buttons on the SLT2 to perform a factory reset.
 
-* SLT3 ONLY - After joining the network, the Thermostat goes into a setup mode requesting Hot Water and Central Heating schedules to be set up. Do NOT accept the option to set these up and the
+It will, reset, reboot and join the network (check log messages on the web frontend screen).
+* The LED on the Boiler Controller should turn solid green and the SLR/SLT's should be joined to the Zigbee network and communicate with each other.
+
+* SLT3 ONLY - After joining the network, the Thermostat goes into a setup mode requesting Hot Water and Central Heating schedules to be set up. Do NOT accept the option to set these up. The
 thermostat should just display the current temperature and the status of CH and HW will be shown as 'Sch'
 
-* Finally click the web frontend 'Join' button to disable other devices from joining the network.
+* Finally click the web frontend 'Join' button to disable other devices from potentially joining the network.
 
-* The web frontend screen should now show two new devices successfully connected to the Pi-ve Zigbee network.
+* The web frontend screen should now show two new devices successfully connected to the Pi-ve Zigbee network with unfriendly hexadecimal names.
 
 * The last step is to set 'friendly names' for the SLR/SLT devices as these are used later in the node-RED flows when referring to Mosquitto Message Broker topics - So, in the device's screen on the 
 web frontend, click on the 'unfriendly' hexadecimal name for the SLR device. A description screen is displayed with an edit (pencil icon) option at the bottom left. Click that and enter a friendly
