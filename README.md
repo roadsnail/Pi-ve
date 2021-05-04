@@ -77,7 +77,7 @@ If you are confident and happy with the warning above and want to make your own 
 
 
 * The Hive Active components, the SLT (Thermostat) and SLR2 (Boiler Controller), are easily obtained used from the usual Internet auction places. The Hive Active hub is not required as this will be replaced by the Raspberry Pi. 
-*Although the above picture shows the older thermostat (SLT2). A newer SLT3 may be used instead.*
+*Although the above picture shows the older Hive Active Thermostat (Model SLT2), the newer model SLT3 may be used instead.*
  
 * A Pi Zero W was a freebie when I subscribed to the excellent MagPi magazine. See https://magpi.raspberrypi.org/. Alternatively, these are readily available as a kit including a case and a USB OTG Host cable.
 
@@ -361,7 +361,8 @@ pi@pive:~ $ tar -xzvf  Pive-images.tar.gz
 If you have successfully followed the official Zigbee2MQTT installation notes earlier, your Pi-ve should have started Zigbee and made a connection to the Mosquitto Message broker
 running on the Pi.
 
-The following additions should be made to the Zigbee2MQTT configuration.yaml file to:-
+#### Zigbee2MQTT Confuiguration - Addition Steps
+Make the following additions should to the Zigbee2MQTT configuration.yaml file to:-
 
 * Enable the web-based frontend - The web-based frontend to Zigbee2MQTT should be enabled to allow the easier setup of the Zigbee connection from the CC2531 co-ordinator to the Hive SLR/SLT devices. 
 This can be seen in the example configuration.yaml file below under the section **frontend:** -  set **port:** to **7070** and **host:** to **0.0.0.0**
@@ -564,7 +565,8 @@ On the SLT2 model thermostat:- Press top right 'menu' button marked + to enable 
 To complete the software setup, copy the node-RED flow at https://github.com/roadsnail/Pi-ve/blob/main/Pi-ve%20flow%20v1-40beta and import it as a new flow
  in node-RED. Pointing a browser at http://your-pive-ip-address:1880 go to Menu - Import - New flow.
  
-The flow should deploy without warnings/errors and the Pi-ve dashboard should be available by pointing a web browser at http://your-pive-ip-address:1880/ui . If warnings about missing nodes appear, then check that the additional nodes were installed as listed above.
+The flow should deploy without warnings/errors and the Pi-ve dashboard should be available by pointing a web browser at http://your-pive-ip-address:1880/ui . If warnings about
+ missing nodes appear, then check that the additional nodes were installed as listed [above.](https://github.com/roadsnail/Pi-ve#list-of-additional-nodes-)
 
 
 ![Pi-ve 1-30b Screenshot](https://user-images.githubusercontent.com/24318993/116697598-4b2ab280-a9bb-11eb-9a23-5add8a49bdca.png)
