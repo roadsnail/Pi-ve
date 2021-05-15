@@ -570,6 +570,8 @@ To complete the software setup, copy the node-RED flow at https://github.com/roa
  
 The flow should deploy without warnings/errors and the Pi-ve dashboard should be available by pointing a web browser at http://your-pive-ip-address:1880/ui . If warnings about
  missing nodes appear, then check that the additional nodes were installed as listed [above.](https://github.com/roadsnail/Pi-ve#list-of-additional-nodes-)
+ 
+ The first time the flow runs, it will check for the existence of two files containing time slot settings. (These files are stored by default in the home directory of the account used to install Node-RED ie. user pi in this tutorial). The files are named Pive-CH and Pve-HW for Central Heating and Hot Water. If these files are not found on first run of the flow, they should be created by the Node-RED catch nodes name No HW! and No CH!.
 
 
 ![Pi-ve 1-30b Screenshot](https://user-images.githubusercontent.com/24318993/116697598-4b2ab280-a9bb-11eb-9a23-5add8a49bdca.png)
@@ -582,7 +584,7 @@ There are between 1 and a maximum of 8 timed 'On' periods per day for both Heati
 
 By default, the current day's Time Slots are listed under the HW Daily Time Slots and CH Daily Time Slots columns. Pressing a 'Day' button selects all of the Time Slots for a particular day for both Heating and Hot Water. 
  
-The 'C' Button will restore default Time Slots for the whole week and should be used with care. 
+The 'C' Button may be used to restore default Time Slots for the whole week and should be used with care as any settings will be overwritten with new defaults!
  
 The (selected) Time Slots are modified using the four buttons: SAVE, CANCEL, ADD and DELETE.
 
