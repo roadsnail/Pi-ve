@@ -584,7 +584,7 @@ There are between 1 and a maximum of 8 timed 'On' periods per day for both Heati
 
 By default, the current day's Time Slots are listed under the HW Daily Time Slots and CH Daily Time Slots columns. Pressing a 'Day' button selects all of the Time Slots for a particular day for both Heating and Hot Water. 
  
-The 'C' Button may be used to restore default Time Slots for the whole week and should be used with care as any settings will be overwritten with new defaults!
+The 'C' Button may be used to restore default Time Slots for the whole week and should be used with care as any existing time slot settings will be overwritten with new defaults!
  
 The (selected) Time Slots are modified using the four buttons: SAVE, CANCEL, ADD and DELETE.
 
