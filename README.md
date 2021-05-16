@@ -582,19 +582,21 @@ The flow should deploy without warnings/errors and the Pi-ve dashboard should be
 
 There are between 1 and a maximum of 8 timed 'On' periods per day for both Heating and Hot Water. Heating and/or Hot Water is 'Off' during the periods between the Time Slots.
 
-By default, the current day's Time Slots are listed under the HW Daily Time Slots and CH Daily Time Slots columns. Pressing a 'Day' button selects all of the Time Slots for a particular day for both Heating and Hot Water. 
- 
-The 'C' Button may be used to restore default Time Slots for the whole week and should be used with care as any existing time slot settings will be overwritten with new defaults!
+By default, the current day's Time Slots are listed under the HW Daily Time Slots and CH Daily Time Slots columns. Pressing a 'Day' button selects all of the Time Slots for a particular day for either Heating or Hot Water. 
+
+A Time Slot is selected, (press or click on it in the list), and the Time Slot Start/End Times are displayed in the Edit Time Slot column where they may be changed.
  
 The (selected) Time Slots are modified using the four buttons: SAVE, CANCEL, ADD and DELETE.
 
-* SAVE - Selecting a Time Slot will show that slot's start and end times under the HW Edit Time Slot and CH Edit Time Slot columns. These(On) times may be changed, then pressing the 'SAVE' button will store the new times. Checks are made to ensure the start/end times do not overlap with previous and later Time Slots.
+* SAVE - Pressing the 'SAVE' button will store the modified times. (Checks are made to ensure the start/end times do not overlap with previous and later Time Slots).
 
-* CANCEL - Will cancel any modifications in progress to the start/end times and restore the original times to the Edit columns
+* CANCEL - Will cancel any modifications in progress to the times and restore the originals to the Edit Time Slot columns
 
-* ADD - Inserts a new Time Slot after the currently time slot highlighted in the Daily Time Slot columns
+* ADD - Inserts a new Time Slot after the currently selected time slot highlighted in the Daily Time Slot columns
 
-* DELETE - Removes the selected Time Slot from the daily list. Note that Time Slot one cannot be deleted and attempting to delete will result in an error
+* DELETE - Removes the selected Time Slot from the daily list. Note that Time Slot one cannot be deleted and attempting to delete it will result in an error
+
+The 'C' Button may be used to restore default Time Slots for the whole week and should be used with care. Existing time slot settings will be overwritten with new defaults!
 
  
 
