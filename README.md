@@ -622,7 +622,7 @@ The 'C' Button may be used to restore default Time Slots for the whole week and 
  
  * OVERRIDE Current CH/HW Relay State
  
-In Timer mode, the state of CH and/or HW relays may be toggled by pressing the *CH OVERRIDE TIMER* and/or *HW OVERRIDE TIMER* button and will be active from the time it is pressed
+In Timer mode, the state of the CH and/or HW relays may be toggled by pressing the *CH OVERRIDE TIMER* and/or *HW OVERRIDE TIMER* button. Override will be active from the time the button is pressed
  until completion of the current Time Slot. 
 
 Pressing the relevant *Override Active* will turn the Override Active LED green and the override duration is shown beneath the LED indicator. The Start time being the time OVERRIDE
