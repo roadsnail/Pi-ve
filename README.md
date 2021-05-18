@@ -109,8 +109,10 @@ network and browse to URL http://your-pive-ip-address:1880 (inserting your Pi-ve
 It shows the current status of the Pi-ve, online, current time, plus the current temperature/thermostat setting and CH/HW Off/On and 'Demand' states.
 
 
-![Pi-ve V1 30 Node-RED Dashboard](https://user-images.githubusercontent.com/24318993/116281895-1253c900-a782-11eb-9ccd-9a1f381c17d9.png)
-*Example Pi-ve Dashboard screenshot showing Pi-ve 'online', room temperature 19.93 deg C, thermostat setting 21 deg. Heating has been boosted with 29:33 minutes remaining. Looking at the HW Time Slots for the current time (17:41) HW is programmed to 'Off', however, 'Override' is active forcing HW On (indicated by the green 'State' LED). Both the CH and HW 'Demand' icons are active (not greyed out)*
+![2021-05-18 12_34_57-Node-RED Dashboard](https://user-images.githubusercontent.com/24318993/118644632-ea321580-b7d5-11eb-8cbe-ebb9f3de32ca.png)
+*Example Pi-ve Dashboard screenshot showing Pi-ve 'online', room temperature 17.55 deg C, thermostat setting 20 deg. Hot Water has been boosted with 29:44 minutes remaining. 
+Looking at the CH Time Slots for the current time (12:34) CH is programmed to 'On', however, 'Override' is active forcing CH Off (indicated by the green 'Override State' LED). 
+The HW 'Demand' icons is active (not greyed out), however the CH icon is greyed out thus inactive*
 
 * 'Manual' or 'Timer' modes for heating and water.
 
