@@ -620,7 +620,7 @@ The (selected) Time Slots are modified using the four buttons: SAVE, CANCEL, ADD
 The 'C' Button may be used to restore default Time Slots for the whole week and should be used with care. Existing time slot settings will be overwritten with new defaults!
 
  
- * OVERRIDE Current CH/HW Relay State
+## OVERRIDE Current CH/HW Relay State (in TMR Mode)
  
 In Timer mode, the state of the CH and/or HW relays may be toggled by pressing the *CH OVERRIDE TIMER* and/or *HW OVERRIDE TIMER* button. Override will be active from the time the button is pressed
  until completion of the current Time Slot. 
