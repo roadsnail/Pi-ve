@@ -633,14 +633,14 @@ Pressing the relevant *Override Active* will turn the Override Active LED green.
  
 ## Boost Function
 
-The four boost buttons: +30M, +60M, +90M and CANCEL allow CH and/or HW outputs to be turned on for a period of 30, 60 or 90 minutes. 
+The four boost buttons: +30M, +60M, +90M and CANCEL allow CH and/or HW outputs to be turned on for a period of 30, 60 or 90 minutes respectively. 
 
 Thus pressing the CH *+30M* button will set the thermostat setpoint (SP) to 1 degree C higher than the current SLR Thermostat Temperature for 30 minutes. Pressing the HW *+30M* button will switch
-the HW output on for 30 minutes. Similarly the boost time may be 60 or 90 minutes by pressing the appropriate button.
+the HW output on for a duration of 30 minutes. Similarly the boost time may be 60 or 90 minutes by pressing the appropriate button.
 
 On pressing the boost button, the boost time remaining will be displayed, (the boost countdown), until the (boost) time remaining equals 00:00 and the previous output status is restored.
 
-An active Boost state may be cancelled by pressing the *CANCEL* button.
+An active Boost state may be cancelled at any time by pressing the *CANCEL* button.
 
 ---
 ## Attributions
