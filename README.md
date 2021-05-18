@@ -128,7 +128,7 @@ It shows the current status of the Pi-ve, online, current time, plus the current
 
 ## The Pi-ve HTTP Screen - Control Pi-ve with HTTP requests
 
-A screenshot showing Off/On, Manual/Timer Mode and Boost buttons on a simple browser screen that allows for easy control from a smartphone/tablet.
+A screenshot showing Off/On, Manual/Timer Mode and Boost buttons on a simple browser screen that allows for easy control from a smartphone/tablet by pointing your browser to http://your-pive-ip-address:1880/ctrl/page
 
 ![Pi-ve-HTTP](https://user-images.githubusercontent.com/24318993/116427789-3ecc1b80-a83c-11eb-9ee8-3b2a4c5422e0.png)
 
