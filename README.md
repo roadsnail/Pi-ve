@@ -624,9 +624,23 @@ The 'C' Button may be used to restore default Time Slots for the whole week and 
  
 In Timer mode, the state of the CH and/or HW relays may be toggled by pressing the *CH OVERRIDE TIMER* and/or *HW OVERRIDE TIMER* button. Override will be active from the time the button is pressed
  until completion of the current Time Slot. 
+ 
+Thus pressing Override Timer while the relevant output is on, will switch it off for the remainder of the current Time Slot duration. Similarly if the output is currently off, then Override will switch
+it on for the reaminder of the current time slot. 
 
-Pressing the relevant *Override Active* will turn the Override Active LED green and the override duration is shown beneath the LED indicator. The Start time being the time OVERRIDE
+Pressing the relevant *Override Active* will turn the Override Active LED green. The override duration is shown beneath the LED indicator. The Start time being the time OVERRIDE
  was activated. The End time will be the current time slot End Time (either On or Off).  
+ 
+## Boost Function
+
+The four boost buttons: +30M, +60M, +90M and CANCEL allow CH and/or HW outputs to be turned on for a period of 30, 60 or 90 minutes. 
+
+Thus pressing the CH *+30M* button will set the thermostat setpoint (SP) to 1 degree C higher than the current SLR Thermostat Temperature for 30 minutes. Pressing the HW *+30M* button will switch
+the HW output on for 30 minutes. Similarly the boost time may be 60 or 90 minutes by pressing the appropriate button.
+
+On pressing the boost button, the boost time remaining will be displayed, (the boost countdown), until the (boost) time remaining equals 00:00 and the previous output status is restored.
+
+An active Boost state may be cancelled by pressing the *CANCEL* button.
 
 ---
 ## Attributions
