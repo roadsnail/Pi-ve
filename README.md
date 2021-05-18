@@ -578,6 +578,27 @@ The flow should deploy without warnings/errors and the Pi-ve dashboard should be
 
 
 ---
+## Pi-ve Operation Modes
+
+* Manual Mode (CH and/or HW)
+
+Set Man<>Timer switch to 'Man' position OR Pressing *MANUAL ON/OFF - TIMER MODE* button toggles betweeen Manual and Timer Modes. (Applicable to CH and HW)
+
+In Manual mode, the HW relay is switched by its *Manual Mode - Off/On* switch. The state of the relay is indicated by the *State* LED and the HW *Demand* icon.
+
+Similarly, the CH relay is switched by its *Manual Mode - Off/On* switch according to the *Thermostat SP* setting. The state of the relay is indicated by the *State* LED and the CH *Demand* icon. 
+
+
+* Timer Mode (CH and/or HW)
+
+Set Man<>Timer switch to 'Timer' position OR Pressing *MANUAL ON/OFF - TIMER MODE* button toggles betweeen Manual and Timer Modes. (Applicable to CH and HW)
+
+In Timer mode, the HW relay is automatically switched according to the current HW Time Slot state (see below Timed Off/On Slots). The state of the relay is indicated by the *State* LED and the HW *Demand* icon.
+
+Similarly, the CH relay is automatically according to the current CH Time Slot state (see below Timed Off/On Slots). The state of the relay is indicated by the *State* LED and the CH *Demand* icon. 
+
+
+
 ## Pi-ve Dashboard Timed Off/On Slots (in timer (TMR) Mode)
 
 There are between 1 and a maximum of 8 timed 'On' periods per day for both Heating and Hot Water. Heating and/or Hot Water is 'Off' during the periods between the Time Slots.
