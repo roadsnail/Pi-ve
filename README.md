@@ -118,7 +118,8 @@ The HW 'Demand' icons is active (on - not greyed out), however the CH icon is gr
 
 * Heating and Water Off/On switching.
 
-* Timed On/Off periods for 7 days and up to 8 programmable 'On' periods per day (Time Slots) are available for boiler control of heating and hot water.
+* Timed 'On' periods for 7 days and up to 8 programmable 'On' periods per day (Time Slots) are available for boiler control of heating and hot water. A thermostat setpoint value can be set for each 'On' 
+Time Slot period allowing CH thermostat settings to be changed during a 24hr period.
 
 * An 'Override Timer' function is available allowing the current state of CH or HW to be changed for the duration of a time slot (either off to on OR on to off).
 
