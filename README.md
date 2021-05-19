@@ -622,6 +622,8 @@ The (selected) Time Slots are modified using the four buttons: SAVE, CANCEL, ADD
 
 The 'C' Button may be used to restore default Time Slots for the whole week and should be used with care. Existing time slot settings will be overwritten with new defaults!
 
+* REPEAT PREVIOUS DAY'S PROG - Will copy the previous day's Time Slot settings into the day currently selected
+
  
 ## OVERRIDE Current CH/HW Relay State (in TMR Mode)
  
