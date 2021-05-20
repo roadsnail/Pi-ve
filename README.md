@@ -624,6 +624,40 @@ The 'C' Button may be used to restore default Time Slots for the whole week and 
 
 * REPEAT PREVIOUS DAY'S PROG - Will copy the previous day's Time Slot settings into the day currently selected
 
+## Programming Central Heating Time Slots
+
+Example Time Slot setup for CH to:-
+1. Switch on CH at 06:30 to 20.5 deg C on Monday
+2. 07:45 turn down thermostat to 19 deg C
+3. 08:15 switch off CH
+4. 16:30 turn on CH and set thermostat to 21 deg C
+5. 18:40 turn down thermostat to 19.5 deg C 
+6. 22:15 turn off heating
+
+* Select Day MON - Edit Time Slot 1 (Click on Time Slot 1 from list)...
+Set - Start = 06:30 End = 07:45 Temp = 20.5 (SAVE)
+
+* Edit Time Slot 2 (Click on Time Slot 2)...
+Set - Start = 07:45 End = 08:15 Temp = 19 (SAVE)
+
+* Edit Time Slot 3 ...
+Set - Start = 16:30 End = 18:40 Temp = 21 (SAVE)
+
+* Edit Time Slot 4 ...
+Set - Start = 18:40 End = 22:15 Temp = 19.5 (SAVE)
+
+* Delete Time Slots 5 to 8
+
+After 22:15, CH will be switched Off until the first 
+(On)Time Slot on Tuesday
+
+## Repeat Previous Day's Programme
+
+Want the same programme on Tuesday? Simple -:
+
+* Select Day TUE - (Tuesday's Time Slots will be displayed under CH Edit Time Slot column) 
+Click 'REPEAT PREVIOUS DAY'S PROG'
+
  
 ## OVERRIDE Current CH/HW Relay State (in TMR Mode)
  
