@@ -601,7 +601,7 @@ In Timer mode, the HW relay is automatically switched according to the current H
 Similarly, the CH relay is automatically according to the current CH Time Slot state (see below Timed Off/On Slots). The state of the relay is indicated by the *State* LED and the CH *Demand* icon. 
 
 
-
+---
 ## Pi-ve Dashboard Timed Off/On Slots (in timer (TMR) Mode)
 
 There are between 1 and a maximum of 8 timed 'On' periods per day for both Heating and Hot Water. Heating and/or Hot Water is 'Off' during the periods between the Time Slots.
@@ -624,6 +624,7 @@ The 'C' Button may be used to restore default Time Slots for the whole week and 
 
 * REPEAT PREVIOUS DAY'S PROG - Will copy the previous day's Time Slot settings into the day currently selected
 
+---
 ## Programming Central Heating Time Slots
 
 Example Time Slot setup for CH to:-
@@ -655,6 +656,7 @@ Set - Start = 18:40 End = 22:15 Temp = 19.5 (SAVE)
 After 22:15, CH will be switched Off until the first 
 (On)Time Slot on Tuesday
 
+---
 ## Repeat Previous Day's Programme
 
 Want the same programme on Tuesday? Simple -:
@@ -663,7 +665,7 @@ Want the same programme on Tuesday? Simple -:
 
 Click 'REPEAT PREVIOUS DAY'S PROG'
 
- 
+--- 
 ## OVERRIDE Current CH/HW Relay State (in TMR Mode)
  
 In Timer mode, the state of the CH and/or HW relays may be toggled by pressing the *CH OVERRIDE TIMER* and/or *HW OVERRIDE TIMER* button. Override will be active from the time the button is pressed
@@ -674,7 +676,8 @@ it on for the reaminder of the current time slot.
 
 Pressing the relevant *Override Active* will turn the Override Active LED green. The override duration is shown beneath the LED indicator. The Start time being the time OVERRIDE
  was activated. The End time will be the current time slot End Time (either On or Off).  
- 
+
+--- 
 ## Boost Function
 
 The four boost buttons: +30M, +60M, +90M and CANCEL allow CH and/or HW outputs to be turned on for a period of 30, 60 or 90 minutes respectively. 
