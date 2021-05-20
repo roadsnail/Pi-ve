@@ -660,6 +660,7 @@ After 22:15, CH will be switched Off until the first
 Want the same programme on Tuesday? Simple -:
 
 * Select Day TUE - (Tuesday's Time Slots will be displayed under CH Edit Time Slot column) 
+
 Click 'REPEAT PREVIOUS DAY'S PROG'
 
  
