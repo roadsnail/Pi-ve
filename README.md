@@ -635,15 +635,19 @@ Example Time Slot setup for CH to:-
 6. 22:15 turn off heating
 
 * Select Day MON - Edit Time Slot 1 (Click on Time Slot 1 from list)...
+
 Set - Start = 06:30 End = 07:45 Temp = 20.5 (SAVE)
 
 * Edit Time Slot 2 (Click on Time Slot 2)...
+
 Set - Start = 07:45 End = 08:15 Temp = 19 (SAVE)
 
 * Edit Time Slot 3 ...
+
 Set - Start = 16:30 End = 18:40 Temp = 21 (SAVE)
 
 * Edit Time Slot 4 ...
+
 Set - Start = 18:40 End = 22:15 Temp = 19.5 (SAVE)
 
 * Delete Time Slots 5 to 8
