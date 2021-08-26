@@ -365,6 +365,24 @@ pi@pive:~ $ tar -xzvf  Pive-images.tar.gz
 If you have successfully followed the official Zigbee2MQTT installation notes earlier, your Pi-ve should have started Zigbee and made a connection to the Mosquitto Message broker
 running on the Pi.
 
+The Pi-ve node-RED flows have been tested on version 1.19.1 of zigbee2mqtt which is a slightly older version currently (26th Aug 2021) available from the github repository and 
+it is highly recommended that you should git reset your installation to that version. This will only take a few minutes. So run the following commands to stop zigbee2mqtt (just in case it is running), git reset to the version 1.19.1 commit hash, install dependencies then restart zigbee2mqtt....
+
+```
+cd /opt/zigbee2mqtt
+sudo systemctl stop zigbee2mqtt
+
+# Revert to version 1.19.1
+git reset --hard 9bd46932c365e886ed0b1f9b8740d8cce632230c
+
+# Install dependencies (as user "pi")
+npm ci
+# This will take a few minutes, ignore warnings
+
+sudo systemctl start zigbee2mqtt
+```
+
+
 #### Zigbee2MQTT Configuration - Additional Steps
 Make the following additions should to the Zigbee2MQTT configuration.yaml file to:-
 
