@@ -264,7 +264,7 @@ sudo apt-get install mosquitto mosquitto-clients
 #### Node-RED
 See the official install guide here https://nodered.org/docs/getting-started/raspberrypi . Login as user Pi and in the home directory run the command given on the guide page. This will take some time on the Raspberry Pi Zero.
 
-#### Zigbee2mqtt
+#### Zigbee2mqtt (V1.19.1)
 Follow the Official installation guide at https://www.zigbee2mqtt.io/getting_started/running_zigbee2mqtt.html AFTER reading the next two tips:-
 
 * Step 2 of the guide - Installing - instructions to 
@@ -275,8 +275,8 @@ ExecStart should be ignored
 
 Installation of Zigbee2mqtt will take a few minutes, with many warnings thrown up. Don't panic, these may be ignored.
 
-The installation guide should allow the Zigbee2MQTT software to start correctly, however in addition to the configuration settings given in the official guide, please take note 
-of the additional configuration notes in the Zigbee2MQTT software configuration section [below.](https://github.com/roadsnail/Pi-ve/blob/main/README.md#pi-ve-software-configuration)
+Zigbee2MQTT software should start correctly after following the official installation guid, however in addition to the configuration settings given in the official guide, please take note 
+of the additional configuration notes in the Zigbee2MQTT software configuration section [below.](https://github.com/roadsnail/Pi-ve/blob/main/README.md#pi-ve-software-configuration) including instructions to revert the latest version to the tested version (v1.19.1).
 
 ---
 ## Pi-ve software configuration
