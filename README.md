@@ -378,8 +378,8 @@ sudo systemctl stop zigbee2mqtt
 git reset --hard 9bd46932c365e886ed0b1f9b8740d8cce632230c
 
 # Install dependencies (as user "pi")
-npm ci
 # This will take a few minutes, ignore warnings
+npm ci
 
 sudo systemctl start zigbee2mqtt
 ```
