@@ -275,8 +275,8 @@ ExecStart should be ignored
 
 Installation of Zigbee2mqtt will take a few minutes, with many warnings thrown up. Don't panic, these may be ignored.
 
-Zigbee2MQTT software should start correctly after following the official installation guid, however in addition to the configuration settings given in the official guide, please take note 
-of the additional configuration notes in the Zigbee2MQTT software configuration section [below.](https://github.com/roadsnail/Pi-ve/blob/main/README.md#pi-ve-software-configuration) including instructions to revert the latest version to the tested version (v1.19.1).
+Zigbee2MQTT software should start correctly after following the official installation guide, however in addition to the configuration settings (in the official guide), please take note 
+of the additional configuration notes in the Zigbee2MQTT software configuration section [below.](https://github.com/roadsnail/Pi-ve/blob/main/README.md#pi-ve-software-configuration) including instructions on how to revert the latest version (installed above) to the tested version (v1.19.1).
 
 ---
 ## Pi-ve software configuration
