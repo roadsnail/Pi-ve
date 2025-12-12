@@ -1,6 +1,7 @@
 # Pi-ve
 
-UPDATE 12th Dec 2025. I am archiving this project as home automation software such as Home Assistant has supported Hive for some years now. I'll leave the project as read-only for interests sake as I'm still using the HW/CH scheduling code (in Node-Red) even though I'm now using the Home Assistant integration.
+UPDATE 12th Dec 2025. I am archiving this project as home automation software such as Home Assistant has supported Hive for some years now. I'll leave the project as read-only for interests sake as I'm still using the HW/CH scheduling code (in Node-Red) even though I'm now using the Home Assistant integration.  
+__________________________________________________________________________________________________________________
 
 A Raspberry Pi Zero W controls a Hive Active Thermostat (SLTx) /Boiler Controller (SLR2) - A standalone Central Heating (CH)/ Hot Water (HW) control solution (without the British Gas 'Cloud').
 
